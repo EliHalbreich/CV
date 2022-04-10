@@ -2,7 +2,7 @@
 name: Eli D.
 surname: Halbreich
 position: "Research Assistant, Tufts University"
-address: "Department of Psychology,\\tabularnewline 490 Boston Avenue, Medford, MA 02155"
+address: "Department of Psychology\\tabularnewline 490 Boston Avenue, Medford, MA 02155"
 phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
 email: "Eli.Halbreich@tufts.edu"
@@ -13,6 +13,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 header-includes:
   \definecolor{headcolor}{HTML}{3E8EDE}
+
 ---
 
 ```{r setup, include=FALSE}
