@@ -1,7 +1,7 @@
 ---
 name: Eli D.
 surname: Halbreich
-position: "Research Assistant, Tufts University"
+position: "Research Assistant, Tufts University\\tabularnewline Pronouns: he/him/his"
 address: "Department of Psychology\\tabularnewline 490 Boston Avenue, Medford, MA 02155"
 phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
