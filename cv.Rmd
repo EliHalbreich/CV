@@ -37,28 +37,29 @@ tribble(
   "Texas Tech University",
   
   "Bachelor of Arts, Psychology",
-  "Relevant Coursework: Experimental Psych, Human-Animal Interaction, Clinical Methods, One Health, Statistics for Behavioral Science, The Science of Coping, Abnormal Psych, Black Psych, Personal & Social Development, Seminar in CBT, Social Psych, Understanding Child Development Through Film, Introduction to Cognitive and Brain Sciences",
-  "2019--May 2022",
+  "Relevant Coursework: Experimental Psych, Human-Animal Interaction, Clinical Methods, One Health, Statistics for Behavioral Science, The Science of Coping, Abnormal Psych, Black Psych, Personal \\& Social Development, Seminar in CBT, Social Psych, Understanding Child Development Through Film, Introduction to Cognitive and Brain Sciences",
+  "2019--2022",
   "Medford, MA",
-  "Tufts University, GPA: 4.0",
-  "Bachelor of Arts, Psychology",
+  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",
+  "Bachelor of Arts, Psychology",#this line needs to be the same as above to have the additional bullet below coursework
   "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. https://dl.tufts.edu/concern/pdfs/6q183150s",
-  "2019--May 2022",
-  "Medford, MA",
-  "Tufts University, GPA: 4.0",
+  "2019--2022",#this line needs to be the same as above to have the additional bullet below coursework
+  "Medford, MA",#this line needs to be the same as above to have the additional bullet below coursework
+  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",#this line needs to be the same as above to have the additional bullet below coursework
   
   "Psychology Major",
   "Relevant Coursework: Life-Span Psych, Statistics, Biological Psych, Child Growth and Development, General Psych, Civil Rights and the Law",
   "2017--2019",
   "Los Angeles, CA",
-  "Los Angeles City College, GPA: 4.0",
+  "Los Angeles City College",
 ) %>%
   detailed_entries(
     what = Degree,
     when = Year,
     with = Where,
     where = Institution,
-    why = Advisor
+    why = Advisor,
+    .protect = FALSE
   )
 ```
 
@@ -69,9 +70,10 @@ tribble(
   ~Year, ~Award, ~Desc,
   "2022--2026", "Helen DeVitt Jones Fellowship", "Texas Tech University Department of Psychological Sciences",
   "2021", "Priscilla N. Dunne Prize", "Tufts University Department of Psychology",
+  "2021", "TIHAI Student Scholar", "Tufts Initiative for Human-Animal Interaction",
   "2019--2022", "Dean’s List (all full-time semesters)", "Tufts University",
   "2019", "President’s Honors", "Los Angeles City College",
-  "2018--2019", "Full Time Dean’s Honor List (all full-time semesters", "Los Angeles City College",
+  "2018--2019", "Full Time Dean’s Honor List (all full-time semesters)", "Los Angeles City College",
 ) %>% 
   detailed_entries(
     what = Award,
@@ -164,7 +166,7 @@ tribble(
   
   "Research Coordinator, Children's Television Project",
   "Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.",
-  "2021--May 2022",
+  "Aug. 2021--May 2022",
   "Supervisor: Calvin Gidney, PhD",
   
     "Research Assistant, Tufts Pets and Well-Being Lab",
@@ -172,7 +174,7 @@ tribble(
   "May 2021--Aug. 2022",
   "Supervisor: Megan K. Mueller, PhD",
   
-    "Research Assistant, Tufts Institute for Human-Animal Interaction",
+    "Research Assistant, Tufts Initiative for Human-Animal Interaction",
   "Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.",
   "Aug. 2019--Aug. 2022",
   "Supervisor: Deborah Linder, DVM, MS, DACVN",
