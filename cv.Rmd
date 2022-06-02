@@ -1,18 +1,18 @@
 ---
 name: Eli D.
 surname: Halbreich
-position: "Research Assistant, Tufts University\\tabularnewline Pronouns: he/him/his"
-address: "Department of Psychology\\tabularnewline 490 Boston Avenue, Medford, MA 02155"
+position: "Incoming PhD Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
+address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
 phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
-email: "Eli.Halbreich@tufts.edu"
+email: "Eli.Halbreich@ttu.edu"
 twitter: EliHalbreich
 orcid: "0000-0003-4942-9804"
 # github: EliHalbreich
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 header-includes:
-  \definecolor{headcolor}{HTML}{3E8EDE}
+  \definecolor{headcolor}{HTML}{cc0000}
 
 ---
 
@@ -101,6 +101,10 @@ Linder, D. E., Folta, S. C., Must, A., Mulé, C. M., Cash, S. B., **Halbreich, E
 
 Linder D. E., Santiago S., & **Halbreich, E. D.** (2021). Is there a correlation between dog obesity and human obesity? Preliminary findings of overweight status among dog owners and their dogs. *Frontiers in Veterinary Science*, *8*, 654617. https://doi.org/10.3389/fvets.2021.654617
 
+## Book Chapters
+
+King, E. K., **Halbreich, E. D.**, & Mueller, M. K. (In Press). Animals and development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Ng, J. M. Peralta, & A. M. Beck (Eds.), *The handbook on human-animal interactions, interventions and anthrozoology*. 
+
 ## Online Publications
 
 Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a ‘Bland Diet’?* Petfoodology. https://vetnutrition.tufts.edu/2022/02/does-my-pet-need-a-bland-diet/
@@ -116,6 +120,10 @@ Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a �
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 \setlength{\parskip}{8pt}
+
+## Symposium Contributions
+
+Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7-9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Anthrozoology in translation: Communicating research to and from multiple audiences*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
 
 ## Poster Presentations
 
@@ -153,6 +161,7 @@ tribble(
 ```
 
 # Research Experience
+
 ```{r}
 tribble(
   ~ Role,
@@ -187,13 +196,19 @@ tribble(
   )
 ```
 
-# Professional Society Affiliations
+# Professional Society Affiliations  
 
-* Psi Chi, The International Honor Society in Psychology
-* International Society for Anthrozoology
-* American Psychological Association
-* American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice
-* Human Animal Bond Association
+```{r}
+tribble(
+  ~Desc,
+  "Psi Chi, The International Honor Society in Psychology", "International Society for Anthrozoology", "American Psychological Association",
+  "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice",
+  "Human Animal Bond Association"
+) %>% 
+  brief_entries(
+    when = Desc
+  )
+```
   
 # Professional and Departmental Service
 
@@ -211,5 +226,28 @@ tribble(
   
 # Skills
 
-* **Technical**: R, SPSS, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office
-* **Language**: English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)
+```{r}
+tribble(
+  ~Category, ~Desc,
+  "Technical:", "R, SPSS, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
+  "Language:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
+) %>% 
+  brief_entries(
+    what = Desc,
+    when = Category
+  )
+```
+
+# Certifications
+
+```{r}
+tribble(
+  ~Year, ~Organization, ~Desc,
+  "23 August 2019", "CITI Program", "Social & Behavioral Research Course",
+) %>% 
+  detailed_entries(
+    what = Desc,
+    when = Year, 
+    where = Organization
+  )
+```
