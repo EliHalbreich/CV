@@ -123,7 +123,7 @@ Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a â
 
 ## Symposium Contributions
 
-Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7-9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Anthrozoology in translation: Communicating research to and from multiple audiences*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7-9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Ecological Momentary Assessment (EMA) as a Tool for Assessing Human-animal Interaction Across Contexts*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
 
 ## Poster Presentations
 
@@ -136,6 +136,8 @@ Folta, S. C., MulÃ©, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., & 
 
 # Teaching and Advising
 
+## Teaching
+
 ```{r}
 tribble(
   ~ Course,
@@ -147,7 +149,7 @@ tribble(
   "Fall 2020",
   "Tufts University, Eliot-Pearson Department of Child Study and Human Development",
   
-    "Teaching Assistant, One Health",
+  "Teaching Assistant, One Health",
   "Instructor: Deborah Linder, DVM, MS, DACVN",
   "Fall 2020",
   "Tufts University, Department of Community Health",
@@ -156,6 +158,28 @@ tribble(
     what = Course,
     when = Semester,
     where = Department,
+    why = Instructor
+  )
+```
+
+## Advising
+
+```{r}
+tribble(
+  ~ Advisee,
+  ~ Instructor,
+  ~ Semester,
+  ~ Details,
+  "Ellis Renwick-Archibold",
+  "Co-Advisor with Megan K. Mueller, PhD",
+  "Summer 2022",
+  "Science Research Program, New Rochelle High School",
+
+) %>%
+  detailed_entries(
+    what = Advisee,
+    when = Semester,
+    where = Details,
     why = Instructor
   )
 ```
@@ -215,6 +239,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+  "2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
   "2021--Present", "American Psychological Association", "APA Campus Ambassador",
 ) %>% 
   detailed_entries(
