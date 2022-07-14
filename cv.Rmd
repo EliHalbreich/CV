@@ -91,7 +91,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-**Halbreich, E. D.** (In Press). Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. *Animalia*.
+**Halbreich, E. D.** (2022). Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. *Animalia: An Anthrozoology Journal*, *6*(1), 1--13. https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic
 
 Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Callina, K. (2022). Pet ownership and adolescent stress and adaptive coping during the COVID-19 Pandemic: Findings from the Adolescent Brain Cognitive Development (ABCD) Study®. *Anthrozoös*. https://doi.org/10.1080/08927936.2022.2027093
 
