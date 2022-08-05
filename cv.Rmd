@@ -1,7 +1,7 @@
 ---
 name: Eli D.
 surname: Halbreich
-position: "Incoming PhD Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
+position: "Ph.D. Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
 address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
 phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
@@ -30,11 +30,16 @@ tribble(
   ~ Year,
   ~ Where,
   ~ Institution,
-  "Incoming PhD Student, Clinical Psychology",
-  "Advisor: Jason Van Allen, PhD",
-  "Aug. 2022--2028",
+  "Ph.D. Student, Clinical Psychology",
+  "Advisor: Jason Van Allen, Ph.D.",
+  "2022--2028",
   "Lubbock, TX",
   "Texas Tech University",
+  "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology",#this line needs to be the same as above to have the additional bullet below coursework
+  "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
+  "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
+  "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
   
   "Bachelor of Arts, Psychology",
   "Relevant Coursework: Experimental Psych, Human-Animal Interaction, Clinical Methods, One Health, Statistics for Behavioral Science, The Science of Coping, Abnormal Psych, Black Psych, Personal \\& Social Development, Seminar in CBT, Social Psych, Understanding Child Development Through Film, Introduction to Cognitive and Brain Sciences",
@@ -144,8 +149,13 @@ tribble(
   ~ Instructor,
   ~ Semester,
   ~ Department,
+  "Teaching Assistant, Statistical Methods Lab",
+  "Instructor: Will Crescioni, Ph.D.",
+  "Fall 2022",
+  "Texas Tech University, Department of Psychological Sciences",
+  
   "Teaching Assistant, Understanding Child Development Through Film",
-  "Instructor: Calvin Gidney, PhD",
+  "Instructor: Calvin Gidney, Ph.D.",
   "Fall 2020",
   "Tufts University, Eliot-Pearson Department of Child Study and Human Development",
   
@@ -171,7 +181,7 @@ tribble(
   ~ Semester,
   ~ Details,
   "Ellis Renwick-Archibold",
-  "Co-Advisor with Megan K. Mueller, PhD",
+  "Co-Advisor with Megan K. Mueller, Ph.D.",
   "Summer 2022",
   "Science Research Program, New Rochelle High School",
 
@@ -194,18 +204,18 @@ tribble(
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
   "Research Experience: To be determined.",
-  "Starting Aug. 2022",
-  "Supervisor: Jason Van Allen, PhD",
+  "Aug. 2022",
+  "Supervisor: Jason Van Allen, Ph.D.",
   
   "Research Coordinator, Children's Television Project",
   "Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.",
   "Aug. 2021--May 2022",
-  "Supervisor: Calvin Gidney, PhD",
+  "Supervisor: Calvin Gidney, Ph.D.",
   
     "Research Assistant, Tufts Pets and Well-Being Lab",
   "Research Experience: Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.",
   "May 2021--Aug. 2022",
-  "Supervisor: Megan K. Mueller, PhD",
+  "Supervisor: Megan K. Mueller, Ph.D.",
   
     "Research Assistant, Tufts Initiative for Human-Animal Interaction",
   "Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.",
