@@ -96,6 +96,10 @@ tribble(
 
 ## Peer-Reviewed Publications
 
+**Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (In Prep). Pet ownership and profiles of peer social behavior in adolescence.
+
+King, E. K., **Halbreich, E.D.**, Callina, K., Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
+
 **Halbreich, E. D.** (2022). Perceived attitudes of pet owners about their pets during the COVID-19 pandemic. *Animalia: An Anthrozoology Journal*, *6*(1), 1--13. https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic
 
 Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Callina, K. S. (2022). Companion animals and adolescent stress and adaptive coping during the COVID-19 pandemic. *Anthrozoös*, *35*(5), 693--712. https://doi.org/10.1080/08927936.2022.2027093
@@ -249,6 +253,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+  "2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
   "2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
   "2021--Present", "American Psychological Association", "APA Campus Ambassador",
 ) %>% 
