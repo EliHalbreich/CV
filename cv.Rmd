@@ -36,7 +36,7 @@ tribble(
   "Lubbock, TX",
   "Texas Tech University",
   "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology",#this line needs to be the same as above to have the additional bullet below coursework
   "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
   "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
@@ -132,13 +132,17 @@ Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a �
 
 ## Symposium Contributions
 
-Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7-9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Ecological Momentary Assessment (EMA) as a Tool for Assessing Human-animal Interaction Across Contexts*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7--9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Ecological Momentary Assessment (EMA) as a Tool for Assessing Human-animal Interaction Across Contexts*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
 
 ## Poster Presentations
 
-**Halbreich, E. D.** (2022, July 7–9). *Perceived attitudes of pet owners about their pets during the COVID-19 pandemic*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+King, E. K., **Halbreich, E. D.**, Anderson, E., Mueller, M. K. (2023, June 15--18). *Dog interactions and psychophysiology in adolescents with social anxiety*. 32nd International Society for Anthrozoology Conference, Edinburgh, Scotland.
 
-Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., & **Halbreich, E. D.** (2022, May 11–14). *Exploring nutrition, physical activity, and the role of pet dogs in households with a child with autism spectrum disorder: The DANE Study*. INSAR 2022 Annual Meeting, Austin, TX, United States.
+**Halbreich, E. D.**, Mueller, M. K., King, E. K., Callina, K. (2023, April 13--15). *Pet ownership and profiles of peer social behavior in adolescence*. The Society for Research on Adolescence 2023 Annual Meeting, San Diego, CA, United States.
+
+**Halbreich, E. D.** (2022, July 7-–9). *Perceived attitudes of pet owners about their pets during the COVID-19 pandemic*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+
+Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., & **Halbreich, E. D.** (2022, May 11–-14). *Exploring nutrition, physical activity, and the role of pet dogs in households with a child with autism spectrum disorder: The DANE Study*. INSAR 2022 Annual Meeting, Austin, TX, United States.
 
 \endgroup  
 
@@ -198,7 +202,9 @@ tribble(
   )
 ```
 
-# Research Experience
+# Research and Professional Experience
+
+## Research
 
 ```{r}
 tribble(
@@ -208,7 +214,7 @@ tribble(
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
   "Research Experience: Work closely with research team on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
-  "Aug. 2022",
+  "Aug. 2022--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
   
   "Research Coordinator, Children's Television Project",
@@ -234,14 +240,33 @@ tribble(
   )
 ```
 
+## Professional
+```{r}
+tribble(
+  ~ Role,
+  ~ Research,
+  ~ Year,
+  ~ Supervisor,
+    "Co-Director, Texas Tech University Psychology Clinic",
+  "Professional Experience: Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients; Monitor assessment and library inventory; and Assist with administrative tasks.",
+  "Jan. 2023--May 2023",
+  "Supervisor: Megan A. Thoen, Ph.D.",
+) %>%
+  detailed_entries(
+    what = Role,
+    when = Year,
+    why = Research,
+    where = Supervisor
+  )
+```
+
+
 # Professional Society Affiliations  
 
 ```{r}
 tribble(
   ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "International Society for Anthrozoology", "American Psychological Association",
-  "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice",
-  "Human Animal Bond Association"
+  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
@@ -283,8 +308,10 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-  "10 September 2022", "CITI Program", "TTU Human Subject Research Course",
-  "9 September 2022", "CITI Program", "Social and Behavioral Responsible Scholarship Course",
+  "6 Jan. 2023", "CITI Program", "Working with Dogs in Research Settings",
+  "13 Dec. 2022", "CITI Program", "Working With Horses In An Agricultural Research Setting",
+  "10 Sept. 2022", "CITI Program", "TTU Human Subject Research Course",
+  "9 Sept. 2022", "CITI Program", "Social and Behavioral Responsible Scholarship Course",
 ) %>% 
   detailed_entries(
     what = Desc,
