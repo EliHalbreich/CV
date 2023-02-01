@@ -248,7 +248,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
     "Co-Director, Texas Tech University Psychology Clinic",
-  "Professional Experience: Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients; Monitor assessment and library inventory; and Assist with administrative tasks.",
+  "Professional Experience: Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients, including risk assessment protocols; Monitor assessment and library inventory; and Assist with administrative tasks.",
   "Jan. 2023--May 2023",
   "Supervisor: Megan A. Thoen, Ph.D.",
 ) %>%
