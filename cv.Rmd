@@ -12,7 +12,10 @@ orcid: "0000-0003-4942-9804"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 header-includes:
-  \definecolor{headcolor}{HTML}{cc0000}
+  \definecolor{headcolor}{HTML}{000000}
+  \hypersetup{colorlinks=true, linkcolor=blue, filecolor=blue, urlcolor=blue, urlbordercolor=blue}
+urlcolor: blue
+linkcolor: blue
 
 ---
 
@@ -47,7 +50,7 @@ tribble(
   "Medford, MA",
   "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",
   "Bachelor of Arts, Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. https://dl.tufts.edu/concern/pdfs/6q183150s",
+  "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \\textcolor{blue}{https://dl.tufts.edu/concern/pdfs/6q183150s}",
   "2019--2022",#this line needs to be the same as above to have the additional bullet below coursework
   "Medford, MA",#this line needs to be the same as above to have the additional bullet below coursework
   "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",#this line needs to be the same as above to have the additional bullet below coursework
@@ -95,6 +98,8 @@ tribble(
 \setlength{\parskip}{8pt}
 
 ## Peer-Reviewed Publications
+
+[Google Scholar Profile](https://scholar.google.com/citations?user=ffVvNRYAAAAJ)
 
 **Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (In Prep). Pet ownership and profiles of peer social behavior in adolescence.
 
