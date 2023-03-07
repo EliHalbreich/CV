@@ -71,22 +71,42 @@ tribble(
   )
 ```
 
+# Grants and Fellowships
+
+```{r}
+tribble(
+  ~ Year,
+  ~ Award,
+  ~ Amount,
+  ~ Institution,
+   "2022--2026", "Helen DeVitt Jones Fellowship","Amount: \\$16,000","Texas Tech University Department of Psychological Sciences",
+) %>%
+  detailed_entries(
+    what = Award,
+    when = Year,
+    with = Amount,
+    where = Institution,
+    .protect = FALSE
+  )
+```
+
 # Honors and Awards
 
 ```{r}
 tribble(
-  ~Year, ~Award, ~Desc,
-  "2022--2026", "Helen DeVitt Jones Fellowship", "Texas Tech University Department of Psychological Sciences",
-  "2021", "Priscilla N. Dunne Prize", "Tufts University Department of Psychology",
-  "2021", "TIHAI Student Scholar", "Tufts Initiative for Human-Animal Interaction",
-  "2019--2022", "Dean’s List (all full-time semesters)", "Tufts University",
-  "2019", "President’s Honors", "Los Angeles City College",
-  "2018--2019", "Full Time Dean’s Honor List (all full-time semesters)", "Los Angeles City College",
+  ~Year, ~Award, ~Desc, ~Amount,
+  "2021", "Priscilla N. Dunne Prize", "Tufts University Department of Psychology","Amount: \\$1,000",
+  "2021", "TIHAI Student Scholar", "Tufts Initiative for Human-Animal Interaction", "Amount: \\$500",
+  "2019--2022", "Dean’s List (all full-time semesters)", "Tufts University","",
+  "2019", "President’s Honors", "Los Angeles City College","",
+  "2018--2019", "Full Time Dean’s Honor List (all full-time semesters)", "Los Angeles City College","",
 ) %>% 
   detailed_entries(
     what = Award,
-    when = Year, 
-    where = Desc
+    when = Year,
+    with = Amount,
+    where = Desc,
+    .protect = FALSE
   )
 ```
 
@@ -97,9 +117,9 @@ tribble(
 \setlength{\leftskip}{0.5in}
 \setlength{\parskip}{8pt}
 
-## Peer-Reviewed Publications
-
 [Google Scholar Profile](https://scholar.google.com/citations?user=ffVvNRYAAAAJ)
+
+## Peer-Reviewed Publications
 
 **Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (In Prep). Pet ownership and profiles of peer social behavior in adolescence.
 
@@ -152,7 +172,7 @@ Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., & 
 \endgroup  
 
 
-# Teaching and Advising
+# Teaching and Mentoring Experience
 
 ## Teaching
 
@@ -185,7 +205,7 @@ tribble(
   )
 ```
 
-## Advising
+## Mentoring
 
 ```{r}
 tribble(
@@ -245,7 +265,7 @@ tribble(
   )
 ```
 
-## Professional
+## Clinical Experience
 ```{r}
 tribble(
   ~ Role,
@@ -253,7 +273,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
     "Co-Director, Texas Tech University Psychology Clinic",
-  "Professional Experience: Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients, including risk assessment protocols; Monitor assessment and library inventory; and Assist with administrative tasks.",
+  "Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients, including risk assessment protocols; Monitor assessment and library inventory; and Assist with administrative tasks.",
   "Jan. 2023--May 2023",
   "Supervisor: Megan A. Thoen, Ph.D.",
 ) %>%
@@ -266,18 +286,6 @@ tribble(
 ```
 
 
-# Professional Society Affiliations  
-
-```{r}
-tribble(
-  ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
-) %>% 
-  brief_entries(
-    when = Desc
-  )
-```
-  
 # Professional and Departmental Service
 
 ```{r}
@@ -299,8 +307,8 @@ tribble(
 ```{r}
 tribble(
   ~Category, ~Desc,
-  "Technical:", "R, SPSS, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
-  "Language:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
+  "Programming & Software:", "R, RStudio, Quarto, Markdown, SPSS, MATLAB, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
+  "Languages:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
 ) %>% 
   brief_entries(
     what = Desc,
@@ -322,5 +330,17 @@ tribble(
     what = Desc,
     when = Year, 
     where = Organization
+  )
+```
+
+# Professional Society Affiliations  
+
+```{r}
+tribble(
+  ~Desc,
+  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+) %>% 
+  brief_entries(
+    when = Desc
   )
 ```
