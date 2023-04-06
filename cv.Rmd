@@ -321,10 +321,11 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+  "6 Apr. 2023", "QPR Institute", "QPR Gatekeeper",
   "6 Jan. 2023", "CITI Program", "Working with Dogs in Research Settings",
   "13 Dec. 2022", "CITI Program", "Working With Horses In An Agricultural Research Setting",
-  "10 Sept. 2022", "CITI Program", "TTU Human Subject Research Course",
-  "9 Sept. 2022", "CITI Program", "Social and Behavioral Responsible Scholarship Course",
+  "10 Sep. 2022", "CITI Program", "TTU Human Subject Research Course",
+  "9 Sep. 2022", "CITI Program", "Social and Behavioral Responsible Scholarship Course",
 ) %>% 
   detailed_entries(
     what = Desc,
