@@ -112,6 +112,8 @@ tribble(
 
 # Publications
 
+*Indicates undergraduate trainee author/presenter
+
 \begingroup
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
@@ -163,6 +165,8 @@ Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7--9). Feasibil
 
 King, E. K., **Halbreich, E. D.**, Anderson, E., Mueller, M. K. (2023, June 15--18). *Dog interactions and psychophysiology in adolescents with social anxiety*. 32nd International Society for Anthrozoology Conference, Edinburgh, Scotland.
 
+\*Streicher, B. E., **Halbreich, E. D.**, Healy, A, Hefner, T. D., Lelakowska, G., Van Allen, J. (2023, May 3). *Dog ownership, physical activity, depression, and anxiety symptoms in youth*. Obesity Research Institute 8th Annual Meeting, Lubbock, TX, United States.
+
 **Halbreich, E. D.**, Mueller, M. K., King, E. K., Callina, K. (2023, April 13--15). *Pet ownership and profiles of peer social behavior in adolescence*. The Society for Research on Adolescence 2023 Annual Meeting, San Diego, CA, United States.
 
 **Halbreich, E. D.** (2022, July 7--9). *Perceived attitudes of pet owners about their pets during the COVID-19 pandemic*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
@@ -212,17 +216,23 @@ tribble(
   ~ Advisee,
   ~ Instructor,
   ~ Semester,
-  ~ Details,
+  "Sara Phy",
+  "Subsequent Position: M.P.H. Student, University of Michigan",
+  "2023",
+  "Brooke Streicher",
+  "Subsequent Position: Research Coordinator, Texas Tech University",
+  "2022--2023",
+  "Leah Skelton",
+  "Subsequent Position: Ph.D. Student, University of Northern Colorado",
+  "2022--2023",
   "Ellis Renwick-Archibold",
-  "Co-Advisor with Megan K. Mueller, Ph.D.",
-  "Summer 2022",
   "Science Research Program, New Rochelle High School",
+  "Summer 2022",
 
 ) %>%
   detailed_entries(
     what = Advisee,
     when = Semester,
-    where = Details,
     why = Instructor
   )
 ```

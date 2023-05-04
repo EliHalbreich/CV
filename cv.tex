@@ -1,0 +1,611 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{990000}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{May 2023}
+
+\definecolor{headcolor}{HTML}{000000}
+\hypersetup{colorlinks=true, linkcolor=blue, filecolor=blue, urlcolor=blue, urlbordercolor=blue}
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Curriculum Vitae: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+%\addtolength{\headerboxwidth}{0.2cm}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+\\[0.1cm]\large Ph.D.~Student, Texas Tech
+University\tabularnewline Pronouns: he/him/his\\[0.6cm]
+\normalsize\textbf{Curriculum Vitae}\\
+\normalsize May 2023
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome5}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Eli D. Halbreich}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+\raisebox{-0.05cm}{\imagetop{\faIcon{map-marker-alt}}} &  \imagetop{\begin{tabular}{@{}l@{}}Department
+of Psychological Sciences\tabularnewline Box 42051, Lubbock, TX
+79409-2051\end{tabular}}\\ %
+\faIcon{home} & \href{http://elihalbreich.rbind.io}{elihalbreich.rbind.io}\\% %
+\faIcon{phone-alt} & +1 (818) 297-9925\\%
+\faIcon{envelope} & \href{mailto:Eli.Halbreich@ttu.edu}{\nolinkurl{Eli.Halbreich@ttu.edu}}\\%
+\faIcon{twitter} & \href{https://twitter.com/EliHalbreich}{@EliHalbreich}\\%
+%
+%
+%
+\faIcon{orcid} & \href{https://orcid.org/0000-0003-4942-9804}{0000-0003-4942-9804}\\%
+}
+
+
+%\usepackage{inconsolata}
+
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\hfill #1~}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \cslhangindent - \csllabelwidth}{#1}\vspace{0.8ex}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2022--2028 & \parbox[t]{0.85\textwidth}{%
+\textbf{Ph.D. Student, Clinical Psychology}\hfill{\footnotesize Lubbock, TX}\newline
+  Texas Tech University\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Advisor: Jason Van Allen, Ph.D.%
+\item Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+2019--2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Bachelor of Arts, Psychology}\hfill{\footnotesize Medford, MA}\newline
+  Tufts University, \textit{summa cum laude}, Highest Thesis Honors\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Relevant Coursework: Experimental Psych, Human-Animal Interaction, Clinical Methods, One Health, Statistics for Behavioral Science, The Science of Coping, Abnormal Psych, Black Psych, Personal \& Social Development, Seminar in CBT, Social Psych, Understanding Child Development Through Film, Introduction to Cognitive and Brain Sciences%
+\item Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \textcolor{blue}{https://dl.tufts.edu/concern/pdfs/6q183150s}%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+2017--2019 & \parbox[t]{0.85\textwidth}{%
+\textbf{Psychology Major}\hfill{\footnotesize Los Angeles, CA}\newline
+  Los Angeles City College\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Relevant Coursework: Life-Span Psych, Statistics, Biological Psych, Child Growth and Development, General Psych, Civil Rights and the Law%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{grants-and-fellowships}{%
+\section{Grants and Fellowships}\label{grants-and-fellowships}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2022--2026 & \parbox[t]{0.85\textwidth}{%
+\textbf{Helen DeVitt Jones Fellowship}\hfill{\footnotesize Amount: \$16,000}\newline
+  Texas Tech University Department of Psychological Sciences\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{honors-and-awards}{%
+\section{Honors and Awards}\label{honors-and-awards}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2021 & \parbox[t]{0.85\textwidth}{%
+\textbf{Priscilla N. Dunne Prize}\hfill{\footnotesize Amount: \$1,000}\newline
+  Tufts University Department of Psychology\par%
+  \empty%
+\vspace{\parsep}}\\
+2021 & \parbox[t]{0.85\textwidth}{%
+\textbf{TIHAI Student Scholar}\hfill{\footnotesize Amount: \$500}\newline
+  Tufts Initiative for Human-Animal Interaction\par%
+  \empty%
+\vspace{\parsep}}\\
+2019--2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Dean’s List (all full-time semesters)}\hfill{\footnotesize }\newline
+  Tufts University\par%
+  \empty%
+\vspace{\parsep}}\\
+2019 & \parbox[t]{0.85\textwidth}{%
+\textbf{President’s Honors}\hfill{\footnotesize }\newline
+  Los Angeles City College\par%
+  \empty%
+\vspace{\parsep}}\\
+2018--2019 & \parbox[t]{0.85\textwidth}{%
+\textbf{Full Time Dean’s Honor List (all full-time semesters)}\hfill{\footnotesize }\newline
+  Los Angeles City College\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+*Indicates undergraduate trainee author/presenter
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+\setlength{\parskip}{8pt}
+
+\href{https://scholar.google.com/citations?user=ffVvNRYAAAAJ}{Google
+Scholar Profile}
+
+\hypertarget{peer-reviewed-publications}{%
+\subsection{Peer-Reviewed
+Publications}\label{peer-reviewed-publications}}
+
+\textbf{Halbreich, E.D.}, Callina, K., King, E. K., Mueller, M. K. (In
+Prep). Pet ownership and profiles of peer social behavior in
+adolescence.
+
+King, E. K., \textbf{Halbreich, E.D.}, Callina, K., Mueller, M. K. (In
+Prep). Pet ownership and the relationship between peer victimization and
+emotion regulation in youth.
+
+\textbf{Halbreich, E. D.} (2022). Perceived attitudes of pet owners
+about their pets during the COVID-19 pandemic. \emph{Animalia: An
+Anthrozoology Journal}, \emph{6}(1), 1--13.
+\url{https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic}
+
+Mueller, M. K., King, E. K., \textbf{Halbreich, E. D.}, \& Callina, K.
+S. (2022). Companion animals and adolescent stress and adaptive coping
+during the COVID-19 pandemic. \emph{Anthrozoös}, \emph{35}(5), 693--712.
+\url{https://doi.org/10.1080/08927936.2022.2027093}
+
+\textbf{Halbreich, E. D.}, \& Mueller, M. K. (2022). Profiles of family
+pet ownership during the COVID-19 pandemic. \emph{Current Psychology}.
+\url{https://doi.org/10.1007/s12144-021-02574-x}
+
+Linder, D. E., Folta, S. C., Must, A., Mulé, C. M., Cash, S. B.,
+\textbf{Halbreich, E. D.}, Colón, C., Sullivan, S., Sanabria, E., Gibbs,
+D., \& Farrell, T. (2021). A stakeholder-engaged approach to development
+of an animal-assisted intervention for obesity prevention among youth
+with autism spectrum disorder and their pet dogs. \emph{Frontiers in
+Veterinary Science}, \emph{8}, 735432.
+\url{https://doi.org/10.3389/fvets.2021.735432}
+
+Linder D. E., Santiago S., \& \textbf{Halbreich, E. D.} (2021). Is there
+a correlation between dog obesity and human obesity? Preliminary
+findings of overweight status among dog owners and their dogs.
+\emph{Frontiers in Veterinary Science}, \emph{8}, 654617.
+\url{https://doi.org/10.3389/fvets.2021.654617}
+
+\hypertarget{book-chapters}{%
+\subsection{Book Chapters}\label{book-chapters}}
+
+King, E. K., \textbf{Halbreich, E. D.}, \& Mueller, M. K. (In Press).
+Animals and development: Childhood and adolescence. In A. H. Fine, M. K.
+Mueller, Z. Ng, J. M. Peralta, \& A. M. Beck (Eds.), \emph{The handbook
+on human-animal interactions, interventions and anthrozoology}.
+
+\hypertarget{online-publications}{%
+\subsection{Online Publications}\label{online-publications}}
+
+Linder, D. E., \& \textbf{Halbreich, E. D.} (2022, February 22).
+\emph{Does My Pet Need a `Bland Diet'?} Petfoodology.
+\url{https://vetnutrition.tufts.edu/2022/02/does-my-pet-need-a-bland-diet/}
+
+\textbf{Halbreich, E. D.} (2019, December 9). \emph{Tenure Most Foul}.
+Tufts University Student Scholarship. Tisch Library.
+\url{http://hdl.handle.net/10427/6W924Q81F}
+
+\endgroup
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+\setlength{\parskip}{8pt}
+
+\hypertarget{symposium-contributions}{%
+\subsection{Symposium Contributions}\label{symposium-contributions}}
+
+Mueller, M. K., \textbf{Halbreich, E. D.}, \& Anderson, E. (2022, July
+7--9). Feasibility of using ecological momentary assessment to measure
+the effects of interactions with pet dogs on psychophysiological
+reactivity in adolescents with social anxiety. In N. Gee (Chair),
+\emph{Ecological Momentary Assessment (EMA) as a Tool for Assessing
+Human-animal Interaction Across Contexts}. 31st International Society
+for Anthrozoology Conference, Boise, ID, United States.
+
+\hypertarget{poster-presentations}{%
+\subsection{Poster Presentations}\label{poster-presentations}}
+
+King, E. K., \textbf{Halbreich, E. D.}, Anderson, E., Mueller, M. K.
+(2023, June 15--18). \emph{Dog interactions and psychophysiology in
+adolescents with social anxiety}. 32nd International Society for
+Anthrozoology Conference, Edinburgh, Scotland.
+
+*Streicher, B. E., \textbf{Halbreich, E. D.}, Healy, A, Hefner, T. D.,
+Lelakowska, G., Van Allen, J. (2023, May 3). \emph{Dog ownership,
+physical activity, depression, and anxiety symptoms in youth}. Obesity
+Research Institute 8th Annual Meeting, Lubbock, TX, United States.
+
+\textbf{Halbreich, E. D.}, Mueller, M. K., King, E. K., Callina, K.
+(2023, April 13--15). \emph{Pet ownership and profiles of peer social
+behavior in adolescence}. The Society for Research on Adolescence 2023
+Annual Meeting, San Diego, CA, United States.
+
+\textbf{Halbreich, E. D.} (2022, July 7--9). \emph{Perceived attitudes
+of pet owners about their pets during the COVID-19 pandemic}. 31st
+International Society for Anthrozoology Conference, Boise, ID, United
+States.
+
+Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins,
+J., \& \textbf{Halbreich, E. D.} (2022, May 11--14). \emph{Exploring
+nutrition, physical activity, and the role of pet dogs in households
+with a child with autism spectrum disorder: The DANE Study}. INSAR 2022
+Annual Meeting, Austin, TX, United States.
+
+\endgroup
+
+\hypertarget{teaching-and-mentoring-experience}{%
+\section{Teaching and Mentoring
+Experience}\label{teaching-and-mentoring-experience}}
+
+\hypertarget{teaching}{%
+\subsection{Teaching}\label{teaching}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Fall 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Teaching Assistant, Statistical Methods Lab}\hfill{\footnotesize }\newline
+  Texas Tech University, Department of Psychological Sciences\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Instructor: Will Crescioni, Ph.D.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+Fall 2020 & \parbox[t]{0.85\textwidth}{%
+\textbf{Teaching Assistant, Understanding Child Development Through Film}\hfill{\footnotesize }\newline
+  Tufts University, Eliot-Pearson Department of Child Study and Human Development\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Instructor: Calvin Gidney, Ph.D.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+Fall 2020 & \parbox[t]{0.85\textwidth}{%
+\textbf{Teaching Assistant, One Health}\hfill{\footnotesize }\newline
+  Tufts University, Department of Community Health\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Instructor: Deborah Linder, DVM, MS, DACVN%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{mentoring}{%
+\subsection{Mentoring}\label{mentoring}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{Sara Phy}\hfill{\footnotesize }\newline
+  \empty%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Subsequent Position: M.P.H. Student, University of Michigan%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+2022--2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{Brooke Streicher}\hfill{\footnotesize }\newline
+  \empty%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Subsequent Position: Research Coordinator, Texas Tech University%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+2022--2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{Leah Skelton}\hfill{\footnotesize }\newline
+  \empty%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Subsequent Position: Ph.D. Student, University of Northern Colorado%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+Summer 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Ellis Renwick-Archibold}\hfill{\footnotesize }\newline
+  \empty%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Science Research Program, New Rochelle High School%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{research-and-professional-experience}{%
+\section{Research and Professional
+Experience}\label{research-and-professional-experience}}
+
+\hypertarget{research}{%
+\subsection{Research}\label{research}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Aug. 2022--Present & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab}\hfill{\footnotesize }\newline
+  Supervisor: Jason Van Allen, Ph.D.\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Research Experience: Work closely with research team on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+Aug. 2021--May 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Coordinator, Children's Television Project}\hfill{\footnotesize }\newline
+  Supervisor: Calvin Gidney, Ph.D.\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+May 2021--Aug. 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Assistant, Tufts Pets and Well-Being Lab}\hfill{\footnotesize }\newline
+  Supervisor: Megan K. Mueller, Ph.D.\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Research Experience: Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+Aug. 2019--Aug. 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Assistant, Tufts Initiative for Human-Animal Interaction}\hfill{\footnotesize }\newline
+  Supervisor: Deborah Linder, DVM, MS, DACVN\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{clinical-experience}{%
+\subsection{Clinical Experience}\label{clinical-experience}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Jan. 2023--May 2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{Co-Director, Texas Tech University Psychology Clinic}\hfill{\footnotesize }\newline
+  Supervisor: Megan A. Thoen, Ph.D.\par%
+  \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients, including risk assessment protocols; Monitor assessment and library inventory; and Assist with administrative tasks.%
+\end{itemize}%
+\end{minipage}%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{professional-and-departmental-service}{%
+\section{Professional and Departmental
+Service}\label{professional-and-departmental-service}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2022--Present & \parbox[t]{0.85\textwidth}{%
+\textbf{Inclusion, Diversity, Equity, and Access (IDEA) Committee Member}\hfill{\footnotesize }\newline
+  American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice\par%
+  \empty%
+\vspace{\parsep}}\\
+2022--Present & \parbox[t]{0.85\textwidth}{%
+\textbf{Student Representative}\hfill{\footnotesize }\newline
+  American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice\par%
+  \empty%
+\vspace{\parsep}}\\
+2021--Present & \parbox[t]{0.85\textwidth}{%
+\textbf{APA Campus Ambassador}\hfill{\footnotesize }\newline
+  American Psychological Association\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Programming \& Software: & \parbox[t]{0.85\textwidth}{%
+\textbf{R, RStudio, Quarto, Markdown, SPSS, MATLAB, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office}\\[-0.1cm]{\footnotesize }}\\[0.4cm]
+Languages: & \parbox[t]{0.85\textwidth}{%
+\textbf{English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)}\\[-0.1cm]{\footnotesize }}\\[0.4cm]
+\end{longtable}
+
+\hypertarget{certifications}{%
+\section{Certifications}\label{certifications}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+6 Apr. 2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{QPR Gatekeeper}\hfill{\footnotesize }\newline
+  QPR Institute\par%
+  \empty%
+\vspace{\parsep}}\\
+6 Jan. 2023 & \parbox[t]{0.85\textwidth}{%
+\textbf{Working with Dogs in Research Settings}\hfill{\footnotesize }\newline
+  CITI Program\par%
+  \empty%
+\vspace{\parsep}}\\
+13 Dec. 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Working With Horses In An Agricultural Research Setting}\hfill{\footnotesize }\newline
+  CITI Program\par%
+  \empty%
+\vspace{\parsep}}\\
+10 Sep. 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{TTU Human Subject Research Course}\hfill{\footnotesize }\newline
+  CITI Program\par%
+  \empty%
+\vspace{\parsep}}\\
+9 Sep. 2022 & \parbox[t]{0.85\textwidth}{%
+\textbf{Social and Behavioral Responsible Scholarship Course}\hfill{\footnotesize }\newline
+  CITI Program\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\hypertarget{professional-society-affiliations}{%
+\section{Professional Society
+Affiliations}\label{professional-society-affiliations}}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Psi Chi, The International Honor Society in Psychology & \parbox[t]{0.85\textwidth}{%
+\textbf{}\\[-0.1cm]{\footnotesize }}\\[0.4cm]
+American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice & \parbox[t]{0.85\textwidth}{%
+\textbf{}\\[-0.1cm]{\footnotesize }}\\[0.4cm]
+Human Animal Bond Association & \parbox[t]{0.85\textwidth}{%
+\textbf{}\\[-0.1cm]{\footnotesize }}\\[0.4cm]
+\end{longtable}
+
+\end{document}
