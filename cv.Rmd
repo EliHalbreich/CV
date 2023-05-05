@@ -123,7 +123,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-**Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (In Prep). Pet ownership and profiles of peer social behavior in adolescence.
+**Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (In Press). Pet ownership and profiles of peer social behavior in adolescence. *Journal of Adolescence*.
 
 King, E. K., **Halbreich, E.D.**, Callina, K., Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
 
@@ -222,9 +222,6 @@ tribble(
   "Brooke Streicher",
   "Subsequent Position: Research Coordinator, Texas Tech University",
   "2022--2023",
-  "Leah Skelton",
-  "Subsequent Position: Ph.D. Student, University of Northern Colorado",
-  "2022--2023",
   "Ellis Renwick-Archibold",
   "Science Research Program, New Rochelle High School",
   "Summer 2022",
@@ -295,14 +292,17 @@ tribble(
   )
 ```
 
-
-# Professional and Departmental Service
+# Professional Service and Development
 
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-  "2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
-  "2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
+"May. 2023", "Texas Tech University", "The Groundwork Program",
+"Mar. 2023", "Texas Tech University", "Organizing the Academic CV Workshop",
+"Feb. 2023", "Texas Tech University", "Writing the Academic Cover Letter Workshop",
+"Jan. 2023", "Texas Tech University", "Making Equitable Attendance Policies Workshop",
+"2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
+"2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
   "2021--Present", "American Psychological Association", "APA Campus Ambassador",
 ) %>% 
   detailed_entries(
