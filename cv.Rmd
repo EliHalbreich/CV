@@ -139,7 +139,7 @@ Linder D. E., Santiago S., & **Halbreich, E. D.** (2021). Is there a correlation
 
 ## Book Chapters
 
-King, E. K., **Halbreich, E. D.**, & Mueller, M. K. (In Press). Animals and development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Ng, J. M. Peralta, & A. M. Beck (Eds.), *The handbook on human-animal interactions, interventions and anthrozoology*. 
+King, E. K., **Halbreich, E. D.**, & Mueller, M. K. (2024). Animals in development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Y. Ng, A. M. Beck, & J. M. Peralta  (Eds.), *The Routledge International Handbook of Human-Animal Interactions and Anthrozoology*. 
 
 ## Online Publications
 
@@ -216,6 +216,12 @@ tribble(
   ~ Advisee,
   ~ Instructor,
   ~ Semester,
+  "Madeleine Valley",
+  "Current mentee",
+  "2023--Ongoing",
+  "Amanda Tabansi",
+  "Current mentee",
+  "2023--Ongoing",
   "Macie Le",
   "Current mentee",
   "2023--Ongoing",
