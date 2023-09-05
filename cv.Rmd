@@ -361,7 +361,7 @@ tribble(
 ```{r}
 tribble(
   ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
