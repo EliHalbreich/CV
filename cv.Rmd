@@ -39,7 +39,7 @@ tribble(
   "Lubbock, TX",
   "Texas Tech University",
   "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology, Colloquium in the Teaching of Psychology, Seminar in Professional Ethics, Objective Personality Assessment, Introduction to Psychotherapeutic Intervention and Management, Developmental Psychopathology",#this line needs to be the same as above to have the additional bullet below coursework
   "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
   "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
@@ -79,7 +79,8 @@ tribble(
   ~ Award,
   ~ Amount,
   ~ Institution,
-   "2022--2026", "Helen DeVitt Jones Fellowship","Amount: \\$16,000","Texas Tech University Department of Psychological Sciences",
+  "2023", "2023 APAGS/Psi Chi Junior Scientist Fellowship","Amount: \\$1,000","American Psychological Association of Graduate Students \\& Psi Chi",
+  "2022--2026", "Helen DeVitt Jones Fellowship","Amount: \\$16,000","Texas Tech University Department of Psychological Sciences",
 ) %>%
   detailed_entries(
     what = Award,
@@ -123,9 +124,11 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-King, E. K., **Halbreich, E.D.**, Callina, K., Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
+King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
 
-**Halbreich, E.D.**, Callina, K., King, E. K., Mueller, M. K. (2023). Companion animals and profiles of peer social behavior in adolescence. *Journal of Adolescence*, *95*(6), 1152--1167. https://doi.org/10.1002/jad.12183
+Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*.
+
+**Halbreich, E. D.**, Callina, K., King, E. K., & Mueller, M. K. (2023). Companion animals and profiles of peer social behavior in adolescence. *Journal of Adolescence*, *95*(6), 1152--1167. https://doi.org/10.1002/jad.12183
 
 **Halbreich, E. D.** (2022). Perceived attitudes of pet owners about their pets during the COVID-19 pandemic. *Animalia: An Anthrozoology Journal*, *6*(1), 1--13. https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic
 
@@ -139,7 +142,7 @@ Linder D. E., Santiago S., & **Halbreich, E. D.** (2021). Is there a correlation
 
 ## Book Chapters
 
-King, E. K., **Halbreich, E. D.**, & Mueller, M. K. (2023). Animals in development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Y. Ng, A. M. Beck, & J. M. Peralta  (Eds.), *The Routledge International Handbook of Human-Animal Interactions and Anthrozoology*. 
+King, E. K., **Halbreich, E. D.**, & Mueller, M. K. (2023). Animals in development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Y. Ng, A. M. Beck, & J. M. Peralta  (Eds.), *The Routledge International Handbook of Human-Animal Interactions and Anthrozoology*. https://doi.org/10.4324/9781032153346
 
 ## Online Publications
 
@@ -257,7 +260,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
-  "Research Experience: Work closely with research team on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
+  "Research Experience: Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaborative on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
   "Aug. 2022--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
   
@@ -291,8 +294,20 @@ tribble(
   ~ Research,
   ~ Year,
   ~ Supervisor,
-    "Co-Director, Texas Tech University Psychology Clinic",
-  "Assist new and existing clients with intake procedures as well as ongoing billing and administrative questions; Conduct phone screenings to gather pertinent mental health information from prospective clients, including risk assessment protocols; Monitor assessment and library inventory; and Assist with administrative tasks.",
+      "Texas Tech University, Grief Therapy with Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--May 2023",
+  "Supervisor: Jonathan Singer, Ph.D.",
+      "Texas Tech University, CBT Pain Program for Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--May 2023",
+  "Supervisor: Caroline Cummings, Ph.D.",
+      "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Graduate Student | Individual Therapist",
+  "Sep. 2023--Dec. 2023",
+  "Supervisor: Andrew Littlefield, Ph.D.",
+    "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Clinic Co-Director",
   "Jan. 2023--May 2023",
   "Supervisor: Megan A. Thoen, Ph.D.",
 ) %>%
@@ -313,9 +328,9 @@ tribble(
 "Mar. 2023", "Texas Tech University", "Organizing the Academic CV Workshop",
 "Feb. 2023", "Texas Tech University", "Writing the Academic Cover Letter Workshop",
 "Jan. 2023", "Texas Tech University", "Making Equitable Attendance Policies Workshop",
-"2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
-"2022--Present", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
-  "2021--Present", "American Psychological Association", "APA Campus Ambassador",
+"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
+"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
+  "2021--2023", "American Psychological Association", "APA Campus Ambassador",
 ) %>% 
   detailed_entries(
     what = Desc,
@@ -343,6 +358,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+  "21 Sep. 2023", "MoCA Cognitive Assessment", "Certified Rater",
   "6 Apr. 2023", "QPR Institute", "QPR Gatekeeper",
   "6 Jan. 2023", "CITI Program", "Working with Dogs in Research Settings",
   "13 Dec. 2022", "CITI Program", "Working With Horses In An Agricultural Research Setting",
