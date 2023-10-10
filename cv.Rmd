@@ -3,12 +3,12 @@ name: Eli D.
 surname: Halbreich
 position: "Ph.D. Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
 address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
-phone: +1 (818) 297-9925
+# phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
 email: "Eli.Halbreich@ttu.edu"
 twitter: EliHalbreich
 orcid: "0000-0003-4942-9804"
-# github: EliHalbreich
+github: EliHalbreich
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 header-includes:
@@ -126,7 +126,7 @@ tribble(
 
 King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
 
-Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*.
+Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. (2023) Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*, *11*(1), https://doi.org/10.1079/hai.2023.0036
 
 **Halbreich, E. D.**, Callina, K., King, E. K., & Mueller, M. K. (2023). Companion animals and profiles of peer social behavior in adolescence. *Journal of Adolescence*, *95*(6), 1152--1167. https://doi.org/10.1002/jad.12183
 
@@ -219,6 +219,9 @@ tribble(
   ~ Advisee,
   ~ Instructor,
   ~ Semester,
+  "Cyerra Jones",
+  "Current mentee",
+  "2023--Ongoing",
   "Madeleine Valley",
   "Current mentee",
   "2023--Ongoing",
