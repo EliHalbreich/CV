@@ -124,7 +124,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Prep). Pet ownership and the relationship between peer victimization and emotion regulation in youth.
+King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Press). Pet ownership and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence.*
 
 Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. (2023) Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*, *11*(1), https://doi.org/10.1079/hai.2023.0036
 
