@@ -111,6 +111,62 @@ tribble(
   )
 ```
 
+# Grant and Fellowship Applications
+
+```{r}
+tribble(
+  ~ Year,
+  ~ Award,
+  ~ Amount,
+  ~ Institution,
+  ~ Status,
+    "2023",
+  "American Foundation for Suicide Prevention, Pilot Innovation Grant",
+  "Amount: \\$49,870",
+  "Title: Real-time assessment of suicidal thoughts and behaviors among sexual and gender minority young adults with companion animals (Role: Co-I)",
+  "Status: Submitted",
+  
+    "2023",
+  "National Science Foundation, Graduate Research Fellowship Program",
+  "Amount: \\$111,000",
+  "Title: Companion animals, social support, and coping in rural and urban LGBTQ+ and non-LGBTQ+ adolescents and young adults (Role: PI)",
+  "Status: Submitted",
+  
+    "2023",
+  "Society of Pediatric Psychology, Marion and Donald Routh Student Research Grant",
+  "Amount: \\$5,000",
+  "Title: Examining the impact of animal-assisted therapy on pediatric patients' psychological and physical health (Role: Co-I)",
+  "Status: Submitted",
+  
+    "2023",
+  "American Psychological Foundation, Visionary Grant",
+  "Amount: \\$20,000",
+  "Title: Real-time assessment of suicidal thoughts and behaviors among sexual and gender minority young adults with companion animals (Role: Co-PI)",
+  "Status: Declined by funder",
+  
+    "2023",
+  "Human Animal Bond Research Institute, 2023 Proposal",
+  "Amount: \\$49,500",
+  "Title: Companion animals, social support, and coping in rural and urban LGBTQ+ and non-LGBTQ+ adolescents and young adults (Role: Co-I)",
+  "Status: Declined by funder",
+  
+  "2022",
+  "University of North Texas Center for Psychosocial Health Disparities Research, Improving Behavioral Health of Underserved Groups",
+  "Amount: \\$10,000",
+  "Title: Companion animals, social support, and coping in rural LGBT+ youth (Role: PI)",
+  "Status: Declined by funder",
+
+) %>%
+  detailed_entries(
+    what = Award,
+    when = Year,
+    with = Amount,
+    where = Institution,
+    why = Status,
+    .protect = FALSE
+  )
+```
+
 # Publications
 
 *Indicates undergraduate trainee author/presenter
@@ -124,7 +180,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Press). Pet ownership and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence.*
+King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (In Press). Companion animals and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence.*, https://doi.org/10.1111/jora.12901
 
 Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. (2023) Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*, *11*(1), https://doi.org/10.1079/hai.2023.0036
 
@@ -347,7 +403,7 @@ tribble(
 ```{r}
 tribble(
   ~Category, ~Desc,
-  "Programming & Software:", "R, RStudio, Quarto, Markdown, SPSS, MATLAB, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
+  "Programming & Software:", "R, RStudio, Quarto, Markdown, MPlus, SPSS, MATLAB, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
   "Languages:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
 ) %>% 
   brief_entries(
@@ -361,6 +417,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+  "9 Nov. 2023", "The Trauma and Grief Center at the Hackett Center for Mental Health", "Multidimensional Grief Therapy (MGT) Overview Training",
   "21 Sep. 2023", "MoCA Cognitive Assessment", "Certified Rater",
   "6 Apr. 2023", "QPR Institute", "QPR Gatekeeper",
   "6 Jan. 2023", "CITI Program", "Working with Dogs in Research Settings",
