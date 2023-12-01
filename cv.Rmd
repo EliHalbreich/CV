@@ -5,7 +5,7 @@ position: "Ph.D. Student, Texas Tech University\\tabularnewline Pronouns: he/him
 address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
 # phone: +1 (818) 297-9925
 www: elihalbreich.rbind.io
-email: "Eli.Halbreich@ttu.edu"
+email: "EliHalbreich@proton.me"
 twitter: EliHalbreich
 orcid: "0000-0003-4942-9804"
 github: EliHalbreich
