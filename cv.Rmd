@@ -39,7 +39,12 @@ tribble(
   "Lubbock, TX",
   "Texas Tech University",
   "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology, Colloquium in the Teaching of Psychology, Seminar in Professional Ethics, Objective Personality Assessment, Introduction to Psychotherapeutic Intervention and Management, Developmental Psychopathology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology, Colloquium in the Teaching of Psychology, Seminar in Professional Ethics, Objective Personality Assessment, Introduction to Psychotherapeutic Intervention and Management, Developmental Psychopathology, Introduction to Child and Adolescent Psychological Treatment, Biological Bases of Psychological Function,  Structural Equation Modeling for Psychologists",#this line needs to be the same as above to have the additional bullet below coursework
+  "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
+  "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
+  "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
+  "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Master's Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities",#this line needs to be the same as above to have the additional bullet below coursework
   "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
   "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
@@ -234,6 +239,87 @@ Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., & 
 
 \endgroup  
 
+# Research and Professional Experience
+
+## Research
+
+```{r}
+tribble(
+  ~ Role,
+  ~ Research,
+  ~ Year,
+  ~ Supervisor,
+  "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
+  "Research Experience: Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaborative on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
+  "Aug. 2022--Present",
+  "Supervisor: Jason Van Allen, Ph.D.",
+  
+  "Research Coordinator, Children's Television Project",
+  "Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.",
+  "Aug. 2021--May 2022",
+  "Supervisor: Calvin Gidney, Ph.D.",
+  
+    "Research Assistant, Tufts Pets and Well-Being Lab",
+  "Research Experience: Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.",
+  "May 2021--Aug. 2022",
+  "Supervisor: Megan K. Mueller, Ph.D.",
+  
+    "Research Assistant, Tufts Initiative for Human-Animal Interaction",
+  "Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.",
+  "Aug. 2019--Aug. 2022",
+  "Supervisor: Deborah Linder, DVM, MS, DACVN",
+) %>%
+  detailed_entries(
+    what = Role,
+    when = Year,
+    why = Research,
+    where = Supervisor
+  )
+```
+
+## Clinical Experience
+
+```{r}
+tribble(
+  ~ Role,
+  ~ Research,
+  ~ Year,
+  ~ Supervisor,
+      "Texas Tech University, Grief Therapy with Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--Aug. 2024",
+  "Supervisor: Jonathan Singer, Ph.D.",
+        "Texas Tech University, Grief Therapy with Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--Aug. 2024",
+  "Description: Administering Trauma and Grief Component Therapy for adolescents who have lost a family member.",
+  
+      "Texas Tech University, CBT Pain Program for Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--Aug. 2024",
+  "Supervisor: Caroline Cummings, Ph.D.",
+        "Texas Tech University, CBT Pain Program for Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--Aug. 2024",
+  "Description: Administering a CBT-based pain protocol for teens with chronic pain and their parents.",
+  
+      "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Graduate Student | Individual Therapist",
+  "Sep. 2023--Dec. 2023",
+  "Supervisor: Andrew Littlefield, Ph.D.",
+  
+    "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Clinic Co-Director",
+  "Jan. 2023--May 2023",
+  "Supervisor: Megan A. Thoen, Ph.D.",
+) %>%
+  detailed_entries(
+    what = Role,
+    when = Year,
+    why = Research,
+    where = Supervisor
+  )
+```
 
 # Teaching and Mentoring Experience
 
@@ -291,7 +377,7 @@ tribble(
   "Current mentee",
   "2023--Ongoing",
   "Sara Phy",
-  "Subsequent Position: M.P.H. Student, University of Michigan",
+  "Subsequent Position: Master of Public Health Student, Nutritional Sciences, Dietetics Concentration, University of Michigan",
   "2023",
   "Brooke Streicher",
   "Subsequent Position: Research Coordinator, Texas Tech University",
@@ -305,76 +391,6 @@ tribble(
     what = Advisee,
     when = Semester,
     why = Instructor
-  )
-```
-
-# Research and Professional Experience
-
-## Research
-
-```{r}
-tribble(
-  ~ Role,
-  ~ Research,
-  ~ Year,
-  ~ Supervisor,
-  "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
-  "Research Experience: Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaborative on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
-  "Aug. 2022--Present",
-  "Supervisor: Jason Van Allen, Ph.D.",
-  
-  "Research Coordinator, Children's Television Project",
-  "Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.",
-  "Aug. 2021--May 2022",
-  "Supervisor: Calvin Gidney, Ph.D.",
-  
-    "Research Assistant, Tufts Pets and Well-Being Lab",
-  "Research Experience: Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.",
-  "May 2021--Aug. 2022",
-  "Supervisor: Megan K. Mueller, Ph.D.",
-  
-    "Research Assistant, Tufts Initiative for Human-Animal Interaction",
-  "Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.",
-  "Aug. 2019--Aug. 2022",
-  "Supervisor: Deborah Linder, DVM, MS, DACVN",
-) %>%
-  detailed_entries(
-    what = Role,
-    when = Year,
-    why = Research,
-    where = Supervisor
-  )
-```
-
-## Clinical Experience
-```{r}
-tribble(
-  ~ Role,
-  ~ Research,
-  ~ Year,
-  ~ Supervisor,
-      "Texas Tech University, Grief Therapy with Adolescents",
-  "Practicum Student | Group Therapist",
-  "Sep. 2023--May 2023",
-  "Supervisor: Jonathan Singer, Ph.D.",
-      "Texas Tech University, CBT Pain Program for Adolescents",
-  "Practicum Student | Group Therapist",
-  "Sep. 2023--May 2023",
-  "Supervisor: Caroline Cummings, Ph.D.",
-      "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Therapist",
-  "Sep. 2023--Dec. 2023",
-  "Supervisor: Andrew Littlefield, Ph.D.",
-    "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Clinic Co-Director",
-  "Jan. 2023--May 2023",
-  "Supervisor: Megan A. Thoen, Ph.D.",
-) %>%
-  detailed_entries(
-    what = Role,
-    when = Year,
-    why = Research,
-    where = Supervisor
   )
 ```
 
