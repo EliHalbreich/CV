@@ -40,11 +40,14 @@ tribble(
   "Texas Tech University",
   "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
   "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology, Colloquium in the Teaching of Psychology, Seminar in Professional Ethics, Objective Personality Assessment, Introduction to Psychotherapeutic Intervention and Management, Developmental Psychopathology, Introduction to Child and Adolescent Psychological Treatment, Biological Bases of Psychological Function,  Structural Equation Modeling for Psychologists",#this line needs to be the same as above to have the additional bullet below coursework
+<<<<<<< HEAD
   "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
   "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
   "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
   "Master's Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities",#this line needs to be the same as above to have the additional bullet below coursework
+=======
+>>>>>>> 9077dfbe5259c1e27664b4cb1b282dfadda33f6f
   "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
   "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
@@ -141,7 +144,7 @@ tribble(
   "Society of Pediatric Psychology, Marion and Donald Routh Student Research Grant",
   "Amount: \\$5,000",
   "Title: Examining the impact of animal-assisted therapy on pediatric patients' psychological and physical health (Role: Co-I)",
-  "Status: Submitted",
+  "Status: Declined by funder",
   
     "2023",
   "American Psychological Foundation, Visionary Grant",
@@ -185,7 +188,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (2023). Companion animals and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence*, https://doi.org/10.1111/jora.12901
+King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (2023). Companion animals and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence*, *34*(1), 85--95. https://doi.org/10.1111/jora.12901
 
 Mueller, M. K., King, E. K., **Halbreich, E. D.**, & Anderson, E. (2023) Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. *Human-Animal Interactions*, *11*(1), https://doi.org/10.1079/hai.2023.0036
 
@@ -371,8 +374,8 @@ tribble(
   "Current mentee",
   "2023--Ongoing",
   "Macie Le",
-  "Current mentee",
-  "2023--Ongoing",
+  "Undergraduate Research Assistant",
+  "2023--2023",
   "Abigail Woodall",
   "Current mentee",
   "2023--Ongoing",
@@ -394,6 +397,87 @@ tribble(
   )
 ```
 
+<<<<<<< HEAD
+=======
+# Research and Professional Experience
+
+## Research
+
+```{r}
+tribble(
+  ~ Role,
+  ~ Research,
+  ~ Year,
+  ~ Supervisor,
+  "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
+  "Research Experience: Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaborative on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
+  "Aug. 2022--Present",
+  "Supervisor: Jason Van Allen, Ph.D.",
+  
+  "Research Coordinator, Children's Television Project",
+  "Research Experience: Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.",
+  "Aug. 2021--May 2022",
+  "Supervisor: Calvin Gidney, Ph.D.",
+  
+    "Research Assistant, Tufts Pets and Well-Being Lab",
+  "Research Experience: Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.",
+  "May 2021--Aug. 2022",
+  "Supervisor: Megan K. Mueller, Ph.D.",
+  
+    "Research Assistant, Tufts Initiative for Human-Animal Interaction",
+  "Research Experience: Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.",
+  "Aug. 2019--Aug. 2022",
+  "Supervisor: Deborah Linder, DVM, MS, DACVN",
+) %>%
+  detailed_entries(
+    what = Role,
+    when = Year,
+    why = Research,
+    where = Supervisor
+  )
+```
+
+## Clinical Experience
+```{r}
+tribble(
+  ~ Role,
+  ~ Research,
+  ~ Year,
+  ~ Supervisor,
+      "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Graduate Student | Individual Child Therapist",
+  "Jan. 2024--May 2024",
+  "Supervisor: John L. Cooley, Ph.D.",
+        "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Graduate Student | Individual Adult Therapist",
+  "Jan. 2024--May 2024",
+  "Supervisor: Sarah E. Victor, Ph.D.",
+        "Texas Tech University, Grief Therapy with Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--May 2023",
+  "Supervisor: Jonathan Singer, Ph.D.",
+      "Texas Tech University, CBT Pain Program for Adolescents",
+  "Practicum Student | Group Therapist",
+  "Sep. 2023--May 2023",
+  "Supervisor: Caroline Cummings, Ph.D.",
+      "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Graduate Student | Individual Adult Therapist",
+  "Sep. 2023--Dec. 2023",
+  "Supervisor: Andrew Littlefield, Ph.D.",
+    "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Clinic Co-Director",
+  "Jan. 2023--May 2023",
+  "Supervisor: Megan A. Thoen, Ph.D.",
+) %>%
+  detailed_entries(
+    what = Role,
+    when = Year,
+    why = Research,
+    where = Supervisor
+  )
+```
+
+>>>>>>> 9077dfbe5259c1e27664b4cb1b282dfadda33f6f
 # Professional Service and Development
 
 ```{r}
@@ -419,7 +503,7 @@ tribble(
 ```{r}
 tribble(
   ~Category, ~Desc,
-  "Programming & Software:", "R, RStudio, Quarto, Markdown, MPlus, SPSS, MATLAB, REDCap, Qualtrics, Adobe Acrobat, Microsoft Office",
+  "Programming & Software:", "R, RStudio, Quarto, Markdown, MPlus, SPSS, MATLAB, REDCap, Qualtrics, LaTeX, Adobe Acrobat, Microsoft Office",
   "Languages:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
 ) %>% 
   brief_entries(
@@ -453,7 +537,7 @@ tribble(
 ```{r}
 tribble(
   ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
