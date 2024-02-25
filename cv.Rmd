@@ -289,6 +289,10 @@ tribble(
   "Graduate Student | Individual Child Therapist",
   "Jan. 2024--May 2024",
   "Supervisor: John L. Cooley, Ph.D.",
+        "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Clinical Emphasis: Parent Management Training, Defiant Children,  Trauma-Focused Cognitive Behavioral Therapy",
+  "Jan. 2024--May 2024",
+  "Supervisor: John L. Cooley, Ph.D.",
   
         "Texas Tech University, Texas Tech University Psychology Clinic",
   "Graduate Student | Individual Adult Therapist",
@@ -315,6 +319,10 @@ tribble(
   
       "Texas Tech University, Texas Tech University Psychology Clinic",
   "Graduate Student | Individual Adult Therapist",
+  "Sep. 2023--Dec. 2023",
+  "Supervisor: Andrew Littlefield, Ph.D.",
+        "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Clinical Emphasis: Motivational Interviewing",
   "Sep. 2023--Dec. 2023",
   "Supervisor: Andrew Littlefield, Ph.D.",
   
