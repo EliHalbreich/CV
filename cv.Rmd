@@ -141,7 +141,7 @@ tribble(
   "National Science Foundation, Graduate Research Fellowship Program",
   "Amount: \\$111,000",
   "Title: Companion animals, social support, and coping in rural and urban LGBTQ+ and non-LGBTQ+ adolescents and young adults (Role: PI)",
-  "Status: Submitted",
+  "Status: Not recommended",
   
     "2023",
   "Society of Pediatric Psychology, Marion and Donald Routh Student Research Grant",
