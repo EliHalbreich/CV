@@ -1,6 +1,6 @@
 ---
 name: Eli D.
-surname: Halbreich
+surname: Halbreich, M.A.
 position: "Ph.D. Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
 address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
 # phone: +1 (818) 297-9925
