@@ -129,7 +129,7 @@ tribble(
   "TTU Institute for Studies in Pragmaticism, Cross-Disciplinary Research Excellence Award",
   "Amount: \\$6,000",
   "Title: Examining the impact of animal-assisted therapy on pediatric patients' psychological and physical health (Role: Co-I)",
-  "Status: Submitted",
+  "Status: Declined by funder",
   
   "2023",
   "American Foundation for Suicide Prevention, Pilot Innovation Grant",
