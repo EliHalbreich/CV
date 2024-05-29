@@ -438,7 +438,7 @@ tribble(
   "Undergraduate Research Assistant",
   "2023--2023",
   "Abigail Woodall",
-  "Subsequent Position: Student, Master of Arts in Counseling Psychology, Texas Woman's University",
+  "Subsequent Position: Student, Master of Science in Marriage & Family THerapy, Texas Woman's University",
   "2023--2024",
   "Sara Phy",
   "Subsequent Position: Student, Master of Public Health, Nutritional Sciences, Dietetics Concentration, University of Michigan",
