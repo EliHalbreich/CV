@@ -463,7 +463,9 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-"May. 2023", "Texas Tech University", "The Groundwork Program",
+"7 Jun. 2024", "Compass Mental Health Training & Consultation", "Virtual BPD COMPASS Introductory Workshop",
+"May 2024", "Texas A&M Health Telehealth Institute", "Telehealth 101",
+"May 2023", "Texas Tech University", "The Groundwork Program",
 "Mar. 2023", "Texas Tech University", "Organizing the Academic CV Workshop",
 "Feb. 2023", "Texas Tech University", "Writing the Academic Cover Letter Workshop",
 "Jan. 2023", "Texas Tech University", "Making Equitable Attendance Policies Workshop",
@@ -497,7 +499,6 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-  "2 May 2024", "Texas A&M Health Telehealth Institute", "Telehealth 101",
   "9 Nov. 2023", "The Trauma and Grief Center at the Hackett Center for Mental Health", "Multidimensional Grief Therapy (MGT) Overview Training",
   "21 Sep. 2023", "MoCA Cognitive Assessment", "Certified Rater",
   "6 Apr. 2023", "QPR Institute", "QPR Gatekeeper",
