@@ -258,7 +258,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
-  "Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaborative on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
+  "Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaboratively on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
   "Aug. 2022--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
   
@@ -455,6 +455,20 @@ tribble(
     what = Advisee,
     when = Semester,
     why = Instructor
+  )
+```
+
+# Editorial and Reviewing Experience
+
+```{r}
+tribble(
+  ~Year, ~Organization, ~Desc,
+"2024", "APAGS/Psi Chi Junior Scientist Fellowship", "Graduate Student Reviewer",
+) %>% 
+  detailed_entries(
+    what = Desc,
+    when = Year, 
+    where = Organization
   )
 ```
 
