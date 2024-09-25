@@ -191,7 +191,9 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-**Halbreich, E. D.**, Hefner, T. D., Healy, A. S., Van Allen, J. (In Press). Measurement of attachment in human-animal interaction research. *Human-Animal Interactions*.
+**Halbreich, E. D.**, & Van Allen, J. (In Press). Pet Ownership and Family Involvement in Sports and Other Activities. *Anthrozoös*. https://doi.org/10.1080/08927936.2024.2406097
+
+**Halbreich, E. D.**, Hefner, T. D., Healy, A. S., & Van Allen, J. (2024). Measurement of attachment in human-animal interaction research. *Human-Animal Interactions*, *12*(1). https://doi.org/10.1079/hai.2024.0030
 
 King, E. K., **Halbreich, E. D.**, Callina, K., & Mueller, M. K. (2023). Companion animals and the relationship between peer victimization and emotion regulation in youth. *Journal of Research on Adolescence*, *34*(1), 85--95. https://doi.org/10.1111/jora.12901
 
