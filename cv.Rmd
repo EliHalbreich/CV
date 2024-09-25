@@ -125,6 +125,13 @@ tribble(
   ~ Amount,
   ~ Institution,
   ~ Status,
+  
+        "2024",
+  "TTU Institute for Studies in Pragmaticism, Charles S. Peirce Interdisciplinary Graduate Fellowship",
+  "Amount: \\$5,000",
+  "Title: Examining the Role of Animal-Assisted Therapy (AAT) with Pediatric Physical Therapy (PT) Patients (Role: Co-PI)",
+  "Status: Pending review",
+  
       "2024",
   "TTU Institute for Studies in Pragmaticism, Cross-Disciplinary Research Excellence Award",
   "Amount: \\$6,000",
