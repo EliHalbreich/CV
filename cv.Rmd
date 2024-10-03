@@ -33,38 +33,36 @@ tribble(
   ~ Year,
   ~ Where,
   ~ Institution,
-  "Ph.D. Student, Clinical Psychology",
+  "Doctor of Philosophy, Clinical Psychology (Expected August 2028)",
   "Advisor: Jason Van Allen, Ph.D.",
-  "2022--2028",
+  "2022--Present",
   "Lubbock, TX",
-  "Texas Tech University",
-  "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Relevant Coursework: Experimental Design, Practicum in Intelligence Testing, Seminar in Cognition \\& Cognitive Neuroscience, Seminar in Psychopathology, Intro to Clinical Psychology and CBT, Advanced Correlational Methods and Factor Analysis, Lifespan Development, Research Seminar in Clinical and Counseling Psychology, Colloquium in the Teaching of Psychology, Seminar in Professional Ethics, Objective Personality Assessment, Introduction to Psychotherapeutic Intervention and Management, Developmental Psychopathology, Introduction to Child and Adolescent Psychological Treatment, Biological Bases of Psychological Function,  Structural Equation Modeling for Psychologists",#this line needs to be the same as above to have the additional bullet below coursework
-  "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
+  "Texas Tech University (APA Accredited), GPA: 4.0",
+  
+  "Master of Arts, Clinical Psychology",
+  "Advisor: Jason Van Allen, Ph.D.",
+  "2022--2024",
+  "Lubbock, TX",
+  "Texas Tech University (APA Accredited), GPA: 4.0",
+  
+  "Master of Arts, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
+  "Master's Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities. Texas Tech University. Electronic Theses and Dissertations. \\textcolor{blue}{https://hdl.handle.net/2346/99242}",#this line needs to be the same as above to have the additional bullet below coursework
+  "2022--2024",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
-  "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
-  "Ph.D. Student, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Master's Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities",#this line needs to be the same as above to have the additional bullet below coursework
-  "2022--2028",#this line needs to be the same as above to have the additional bullet below coursework
-  "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
-  "Texas Tech University",#this line needs to be the same as above to have the additional bullet below coursework
+  "Texas Tech University (APA Accredited), GPA: 4.0",#this line needs to be the same as above to have the additional bullet below coursework
   
   "Bachelor of Arts, Psychology",
-  "Relevant Coursework: Experimental Psych, Human-Animal Interaction, Clinical Methods, One Health, Statistics for Behavioral Science, The Science of Coping, Abnormal Psych, Black Psych, Personal \\& Social Development, Seminar in CBT, Social Psych, Understanding Child Development Through Film, Introduction to Cognitive and Brain Sciences",
+  "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \\textcolor{blue}{https://dl.tufts.edu/concern/pdfs/6q183150s}",
   "2019--2022",
   "Medford, MA",
-  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",
-  "Bachelor of Arts, Psychology",#this line needs to be the same as above to have the additional bullet below coursework
-  "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \\textcolor{blue}{https://dl.tufts.edu/concern/pdfs/6q183150s}",
-  "2019--2022",#this line needs to be the same as above to have the additional bullet below coursework
-  "Medford, MA",#this line needs to be the same as above to have the additional bullet below coursework
-  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",#this line needs to be the same as above to have the additional bullet below coursework
+  "Tufts University, \\textit{summa cum laude}, GPA: 4.0, Highest Thesis Honors",
   
   "Psychology Major",
-  "Relevant Coursework: Life-Span Psych, Statistics, Biological Psych, Child Growth and Development, General Psych, Civil Rights and the Law",
+  "GPA: 4.0",
   "2017--2019",
   "Los Angeles, CA",
   "Los Angeles City College",
+  
 ) %>%
   detailed_entries(
     what = Degree,
@@ -269,7 +267,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
-  "Propose and manage new research projects; Write grant applications for relevant funding opportunities; Work collaboratively on funded research projects; Supervise undergraduate research assistants on research projects; and Assist with administrative tasks.",
+  "Write, edit, and conduct statistical analyses for peer-reviewed manuscripts, utilizing structural equation modeling and approaches to categorical data analysis; Propose and manage new research projects; Write and conceptualize grant applications for relevant funding opportunities; Analyze data across different statistical platforms (e.g., R, Mplus, SAS); Work collaboratively on federally funded research projects; Directly mentor and supervise undergraduate research assistants on research projects, including assisting with student-led research projects; and Assist with administrative tasks.",
   "Aug. 2022--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
   
@@ -296,6 +294,23 @@ tribble(
   )
 ```
 
+## Statistical Training
+
+```{r}
+tribble(
+  ~Year, ~Organization, ~Desc,
+"2024", "Instructor: Andrew K. Littlefield, Ph.D.", "Categorical Data Analysis (In Progress)",
+"2023", "Instructor: Andrew K. Littlefield, Ph.D.", "Structural Equation Modeling for Psychologists",
+"2023", "Instructor: Nicholas Croft Borgogna, Ph.D.", "Advanced Correlational Methods and Factor Analysis",
+"2022", "Instructor: Martina I. Klein, Ph.D.", "Experimental Design",
+) %>% 
+  detailed_entries(
+    what = Desc,
+    when = Year, 
+    where = Organization
+  )
+```
+
 ## Clinical Experience
 
 ```{r}
@@ -306,73 +321,97 @@ tribble(
   ~ Supervisor,
             "Texas Tech University, Texas Tech University Psychology Clinic",
   "Graduate Student | Individual Adult and Child Therapist",
-  "Sep. 2024--Dec. 2024",
-  "Supervisor: Jonathan Singer, Ph.D.",
-  
-          "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Adult and Child Therapist",
-  "Jul. 2024--Sep. 2024",
-  "Supervisor: Adam T. Schmidt, Ph.D.",
-  
-          "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Adult and Child Therapist",
-  "May 2024--Jul. 2024",
-  "Supervisor: Jason Van Allen, Ph.D.",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+  "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Provide long-term, individual psychotherapy for anxiety disorders (e.g., generalized anxiety, social anxiety), mood disorders (e.g., major depressive disorder, persistent depressive disorder), chronic pain, attention-deficit/hyperactivity disorder, oppositional defiant disorder, and prolonged grief disorder",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+              "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Provide long-term, individual psychotherapy for anxiety disorders (e.g., generalized anxiety, social anxiety), mood disorders (e.g., major depressive disorder, persistent depressive disorder), chronic pain, attention-deficit/hyperactivity disorder, oppositional defiant disorder, and prolonged grief disorder",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Receive didactic training in evidence-based treatment protocols, including Parent Management Training, Defiant Children, Trauma-Focused Cognitive Behavioral Therapy, and Motivational Interviewing",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Implement evidence-based treatments and theoretically informed case conceptualization built on Cognitive Behavioral Therapy, Acceptance and Commitment Therapy, Behavioral Activation, and Motivational Interviewing",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                  "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Utilize treatment protocols, including the Unified Protocol for Transdiagnostic Treatment of Emotional Disorders, ACT Made Simple, Managing Chronic Pain: A Cognitive-Behavioral Therapy Approach, and Cognitive Behavioral Therapy for Insomnia in Veterans",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                    "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Provide long-term individual and parent-based therapy for children utilizing treatment protocols, including Defiant Children, A Clinical Guide to Pediatric Sleep, and Multidimensional Grief Therapy",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                      "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Design visual aids, client worksheets, and homework documents for clients, consistent with evidence-based treatment protocols",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                          "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Assess for suicide and self-harm risk, create safety plans, monitor risk throughout treatment, assess for and report abuse and neglect to the appropriate safety organizations, and communicate safety-related concerns to parents and caregivers of children",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                            "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Advocate for clients in additional contexts, including medical settings and places of education",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                              "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Conduct psychodiagnostic evaluations (including structured and semi-structured interviews) and assessment batteries, and provide feedback to clients",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
+                                "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Write psychodiagnostic reports and treatment progress reports, including intake reports, treatment plans, and termination summaries",
+  "Sep. 2023--Present",
+  "Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.",
   
             "University Medical Center (UMC) Health System, Pediatrics",
   "Practicum Student | Individual Therapist",
-  "Sep. 2024--Ongoing",
+  "Sep. 2024--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
         "University Medical Center (UMC) Health System, Pediatrics",
   "Providing a variety of psychological services offered within the Pediatric
 Intensive Care Unit, the general Pediatrics Department, the Neonatal Intensive Care Unit, and
 others",
-  "Sep. 2024--Ongoing",
+  "Sep. 2024--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
-  
-      "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Child Therapist",
-  "Jan. 2024--May 2024",
-  "Supervisor: John L. Cooley, Ph.D.",
-        "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Clinical Emphasis: Parent Management Training, Defiant Children,  Trauma-Focused Cognitive Behavioral Therapy",
-  "Jan. 2024--May 2024",
-  "Supervisor: John L. Cooley, Ph.D.",
-  
-        "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Adult Therapist",
-  "Jan. 2024--May 2024",
-  "Supervisor: Sarah E. Victor, Ph.D.",
-  
-        "Texas Tech University, Grief Therapy with Adolescents",
-  "Practicum Student | Group Therapist",
+
+            "Equine-Assisted Positively Fit",
+  "Practicum Student | Individual Therapist",
+  "Mar. 2024--Present",
+  "Supervisor: Jason Van Allen, Ph.D.", 
+              "Equine-Assisted Positively Fit",
+  "Lead therapist providing a family-focused, weight management intervention to youth and their families",
+  "Mar. 2024--Present",
+  "Supervisor: Jason Van Allen, Ph.D.",
+
+  "Texas Tech University, Grief Therapy with Adolescents",
+  "Practicum Student",
   "Sep. 2023--Aug. 2024",
   "Supervisor: Jonathan Singer, Ph.D.",
           "Texas Tech University, Grief Therapy with Adolescents",
-  "Receiving training in Trauma and Grief Component Therapy (TGCT) for adolescents who have lost a family member",
+  "Receive didactic training in Trauma and Grief Component Therapy for adolescents who have lost a family member",
   "Sep. 2023--Aug. 2024",
   "Supervisor: Jonathan Singer, Ph.D.",
   
       "Texas Tech University, CBT Pain Program for Adolescents",
-  "Practicum Student | Group Therapist",
+  "Practicum Student",
   "Sep. 2023--Aug. 2024",
   "Supervisor: Caroline Cummings, Ph.D.",
         "Texas Tech University, CBT Pain Program for Adolescents",
-  "Receiving training in a CBT-based pain protocol for adolescents with chronic pain and their parents",
+  "Receive didactic training in CBT-based pain protocols---Children's Health and Illness Recovery Program; The Comfort Ability---for adolescents with chronic pain and their parents",
   "Sep. 2023--Aug. 2024",
   "Supervisor: Caroline Cummings, Ph.D.",
   
-      "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Graduate Student | Individual Adult Therapist",
-  "Sep. 2023--Dec. 2023",
-  "Supervisor: Andrew Littlefield, Ph.D.",
-        "Texas Tech University, Texas Tech University Psychology Clinic",
-  "Clinical Emphasis: Motivational Interviewing",
-  "Sep. 2023--Dec. 2023",
-  "Supervisor: Andrew Littlefield, Ph.D.",
-  
     "Texas Tech University, Texas Tech University Psychology Clinic",
   "Clinic Co-Director",
+  "Jan. 2023--May 2023",
+  "Supervisor: Megan A. Thoen, Ph.D.",
+    "Texas Tech University, Texas Tech University Psychology Clinic",
+  "Conduct clinical screenings of incoming clients, including risk assessment, history, and presenting concerns",
   "Jan. 2023--May 2023",
   "Supervisor: Megan A. Thoen, Ph.D.",
 ) %>%
@@ -425,32 +464,32 @@ tribble(
   ~ Instructor,
   ~ Semester,
   "Fanny Arendt",
-  "Current mentee",
-  "2024--Ongoing",
+    "Current mentee",
+    "2024--Present",
   "Cyerra Jones",
-  "Current mentee",
-  "2023--Ongoing",
+    "Current mentee",
+    "2023--Present",
   "Madeleine Valley",
-  "Current mentee",
-  "2023--Ongoing",
+    "Current mentee",
+    "2023--Present",
   "Amanda Tabansi",
-  "Current mentee",
-  "2023--Ongoing",
+    "Undergraduate Research Assistant",
+    "2023--2024",
   "Macie Le",
-  "Undergraduate Research Assistant",
-  "2023--2023",
+    "Undergraduate Research Assistant",
+    "2023--2023",
   "Abigail Woodall",
-  "Subsequent Position: Student, Master of Science in Marriage & Family THerapy, Texas Woman's University",
-  "2023--2024",
+    "Subsequent Position: Student, Master of Science in Marriage & Family THerapy, Texas Woman's University",
+    "2023--2024",
   "Sara Phy",
-  "Subsequent Position: Student, Master of Public Health, Nutritional Sciences, Dietetics Concentration, University of Michigan",
-  "2023",
+    "Subsequent Position: Student, Master of Public Health, Nutritional Sciences, Dietetics Concentration, University of Michigan",
+    "2023",
   "Brooke Streicher",
-  "Subsequent Position: Research Coordinator, Texas Tech University",
-  "2022--2023",
+    "Subsequent Position: Research Coordinator, Texas Tech University",
+    "2022--2023",
   "Ellis Renwick-Archibold",
-  "Science Research Program, New Rochelle High School",
-  "Summer 2022",
+    "Science Research Program, New Rochelle High School",
+    "Summer 2022",
 
 ) %>%
   detailed_entries(
@@ -476,18 +515,36 @@ tribble(
 
 # Professional Service and Development
 
+## Service
+
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
+"2024", "Society of Clinical Child and Adolescent Psychology (SCCAP; Division 53)", "SCCAP Mentor",
+"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
+"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
+  "2021--2023", "American Psychological Association", "APA Campus Ambassador",
+) %>% 
+  detailed_entries(
+    what = Desc,
+    when = Year, 
+    where = Organization
+  )
+```
+  
+## Development
+
+```{r}
+tribble(
+  ~Year, ~Organization, ~Desc,
+"25 Jul. 2024", "Megan Renna, Ph.D.", "Dialectical Behavior Therapy (DBT) Seminar",
 "7 Jun. 2024", "Compass Mental Health Training & Consultation", "Virtual BPD COMPASS Introductory Workshop",
 "May 2024", "Texas A&M Health Telehealth Institute", "Telehealth 101",
+"9 Nov. 2023", "The Trauma and Grief Center at the Hackett Center for Mental Health", "Multidimensional Grief Therapy (MGT) Overview Training",
 "May 2023", "Texas Tech University", "The Groundwork Program",
 "Mar. 2023", "Texas Tech University", "Organizing the Academic CV Workshop",
 "Feb. 2023", "Texas Tech University", "Writing the Academic Cover Letter Workshop",
 "Jan. 2023", "Texas Tech University", "Making Equitable Attendance Policies Workshop",
-"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
-"2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
-  "2021--2023", "American Psychological Association", "APA Campus Ambassador",
 ) %>% 
   detailed_entries(
     what = Desc,
@@ -501,7 +558,7 @@ tribble(
 ```{r}
 tribble(
   ~Category, ~Desc,
-  "Programming & Software:", "R, RStudio, Quarto, Markdown, MPlus, SPSS, MATLAB, REDCap, Qualtrics, LaTeX, Adobe Acrobat, Microsoft Office",
+  "Programming & Software:", "R, RStudio, Quarto, Markdown, MPlus, SAS, SPSS, MATLAB, REDCap, Qualtrics, LaTeX",
   "Languages:", "English--Native; German--Intermediate High (ACTFL); Spanish--Novice Mid (ACTFL)"
 ) %>% 
   brief_entries(
@@ -515,7 +572,6 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-  "9 Nov. 2023", "The Trauma and Grief Center at the Hackett Center for Mental Health", "Multidimensional Grief Therapy (MGT) Overview Training",
   "21 Sep. 2023", "MoCA Cognitive Assessment", "Certified Rater",
   "6 Apr. 2023", "QPR Institute", "QPR Gatekeeper",
   "6 Jan. 2023", "CITI Program", "Working with Dogs in Research Settings",
@@ -535,7 +591,7 @@ tribble(
 ```{r}
 tribble(
   ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 54: Society of Pediatric Psychology","American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
