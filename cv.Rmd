@@ -37,28 +37,33 @@ tribble(
   "Advisor: Jason Van Allen, Ph.D.",
   "2022--Present",
   "Lubbock, TX",
-  "Texas Tech University (APA Accredited), GPA: 4.0",
+  "Texas Tech University (APA Accredited)",
   
   "Master of Arts, Clinical Psychology",
   "Advisor: Jason Van Allen, Ph.D.",
   "2022--2024",
   "Lubbock, TX",
-  "Texas Tech University (APA Accredited), GPA: 4.0",
+  "Texas Tech University (APA Accredited)",
   
   "Master of Arts, Clinical Psychology",#this line needs to be the same as above to have the additional bullet below coursework
   "Master's Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities. Texas Tech University. Electronic Theses and Dissertations. \\textcolor{blue}{https://hdl.handle.net/2346/99242}",#this line needs to be the same as above to have the additional bullet below coursework
   "2022--2024",#this line needs to be the same as above to have the additional bullet below coursework
   "Lubbock, TX",#this line needs to be the same as above to have the additional bullet below coursework
-  "Texas Tech University (APA Accredited), GPA: 4.0",#this line needs to be the same as above to have the additional bullet below coursework
+  "Texas Tech University (APA Accredited)",#this line needs to be the same as above to have the additional bullet below coursework
   
   "Bachelor of Arts, Psychology",
+  "Advisor: Alexander Queen, Ph.D.",
+  "2019--2022",
+  "Medford, MA",
+  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",
+        "Bachelor of Arts, Psychology",
   "Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \\textcolor{blue}{https://dl.tufts.edu/concern/pdfs/6q183150s}",
   "2019--2022",
   "Medford, MA",
-  "Tufts University, \\textit{summa cum laude}, GPA: 4.0, Highest Thesis Honors",
+  "Tufts University, \\textit{summa cum laude}, Highest Thesis Honors",
   
   "Psychology Major",
-  "GPA: 4.0",
+  "Advisor: Glenn White, Ph.D.",
   "2017--2019",
   "Los Angeles, CA",
   "Los Angeles City College",
