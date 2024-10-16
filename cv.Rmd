@@ -420,7 +420,8 @@ others.",
     what = Role,
     when = Year,
     why = Research,
-    where = Supervisor
+    where = Supervisor,
+    .protect = FALSE
   )
 ```
 
@@ -592,7 +593,7 @@ tribble(
 ```{r}
 tribble(
   ~Desc,
-  "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 54: Society of Pediatric Psychology","American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+  "American Psychological Association, Division 54: Society of Pediatric Psychology", "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
