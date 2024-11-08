@@ -201,7 +201,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-**Halbreich, E. D.**, & Van Allen, J. (In Press). Pet Ownership and Family Involvement in Sports and Other Activities. *Anthrozoös*. https://doi.org/10.1080/08927936.2024.2406097
+**Halbreich, E. D.**, & Van Allen, J. (2024). Pet Ownership and Family Involvement in Sports and Other Activities. *Anthrozoös*. https://doi.org/10.1080/08927936.2024.2406097
 
 **Halbreich, E. D.**, Hefner, T. D., Healy, A. S., & Van Allen, J. (2024). Measurement of attachment in human-animal interaction research. *Human-Animal Interactions*, *12*(1). https://doi.org/10.1079/hai.2024.0030
 
