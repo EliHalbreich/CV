@@ -201,7 +201,7 @@ tribble(
 
 ## Peer-Reviewed Publications
 
-**Halbreich, E. D.**, & Van Allen, J. (2024). Pet Ownership and Family Involvement in Sports and Other Activities. *AnthrozoÃ¶s*. https://doi.org/10.1080/08927936.2024.2406097
+**Halbreich, E. D.**, & Van Allen, J. (2024). Pet Ownership and Family Involvement in Sports and Other Activities. *AnthrozoÃ¶s*, *37*(6), 1107--1131. https://doi.org/10.1080/08927936.2024.2406097
 
 **Halbreich, E. D.**, Hefner, T. D., Healy, A. S., & Van Allen, J. (2024). Measurement of attachment in human-animal interaction research. *Human-Animal Interactions*, *12*(1). https://doi.org/10.1079/hai.2024.0030
 
@@ -231,6 +231,16 @@ Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a â
 
 **Halbreich, E. D.** (2019, December 9). *Tenure Most Foul*. Tufts University Student Scholarship. Tisch Library. http://hdl.handle.net/10427/6W924Q81F
 
+## Selected Manuscripts in Preparation
+
+Hefner, T. D., **Halbreich, E. D.**, Jones, J., \*Arendt, F., \*Jones, C., & \*Valley, M. (In Prep). Systematic review and meta-analysis of cognitive-dissonance interventions to improve body image satisfaction among athletes.
+
+Lancaster, B. D., Hefner, T. D., **Halbreich, E. D.**, Hall, N. J., & Van Allen, J. (In Prep). The effect of pet dogs on empirical measures of child activity.
+
+**Halbreich, E. D.**, Hefner, T. D., & Van Allen, J. (In Prep). Construction and validation of the companion animal ties scale (CATS).
+
+**Halbreich, E. D.**, & Van Allen, J. (In Prep). Examining the relationship between pet ownership and prosocial behaviors.
+
 \endgroup  
 
 
@@ -246,6 +256,10 @@ Linder, D. E., & **Halbreich, E. D.** (2022, February 22). *Does My Pet Need a â
 Mueller, M. K., **Halbreich, E. D.**, & Anderson, E. (2022, July 7--9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), *Ecological Momentary Assessment (EMA) as a Tool for Assessing Human-animal Interaction Across Contexts*. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
 
 ## Poster Presentations
+
+Hefner, T. D., **Halbreich, E. D.**, Jones, C., \*Valley, M., & Van Allen, J. (2025, April 3--5). *Relationship between pet ownership, physical activity, and sleep recommendations*. Society of Pediatric Psychology 2025 Annual Conference, Phoenix, AZ, United States.
+
+**Halbreich, E. D.**, \*Arendt, F., Hefner, T. D., & Van Allen, J. (2025, April 3--5). *Evaluating prosocial behavior and sleep disturbances between pet owners and non-pet owners*. Society of Pediatric Psychology 2025 Annual Conference, Phoenix, AZ, United States.
 
 **Halbreich, E. D.**, Hefner, T. D., & Van Allen, J. (2024, April 18--20). *Pet ownership and physical activity in adolescence*. The Society for Research on Adolescence 2024 Annual Meeting, Chicago, IL, United States.
 
@@ -532,7 +546,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-"2024", "Society of Clinical Child and Adolescent Psychology (SCCAP; Division 53)", "SCCAP Mentor",
+"2024", "SCCAP, Division 53", "Society of Clinical Child and Adolescent Psychology (SCCAP) Mentor",
 "2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Inclusion, Diversity, Equity, and Access (IDEA) Committee Member",
 "2022--2023", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Student Representative",
   "2021--2023", "American Psychological Association", "APA Campus Ambassador",
@@ -603,7 +617,7 @@ tribble(
 ```{r}
 tribble(
   ~Desc,
-  "American Psychological Association, Division 54: Society of Pediatric Psychology", "Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
+  "American Psychological Association, Division 54: Society of Pediatric Psychology","APA Division 54: Sports Medicine and Orthopedics SIG","APA Division 54: Pediatric Research/Innovative Statistical Methodologies SIG", "APA Division 54: Gender Health SIG","APA Division 54: Diversity SIG","Psi Chi, The International Honor Society in Psychology", "American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology", "American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice", "Human Animal Bond Association"
 ) %>% 
   brief_entries(
     when = Desc
