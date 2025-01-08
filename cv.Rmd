@@ -286,7 +286,7 @@ tribble(
   ~ Year,
   ~ Supervisor,
   "Research Assistant, Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab",
-  "Write, edit, and conduct statistical analyses for peer-reviewed manuscripts, utilizing structural equation modeling and approaches to categorical data analysis; Propose and manage new research projects; Write and conceptualize grant applications for relevant funding opportunities; Analyze data across different statistical platforms (e.g., R, Mplus, SAS); Work collaboratively on federally funded research projects; Directly mentor and supervise undergraduate research assistants on research projects, including assisting with student-led research projects; and Assist with administrative tasks.",
+  "Write, edit, and conduct statistical analyses for peer-reviewed manuscripts, utilizing structural equation modeling and approaches to categorical data analysis; Propose and manage new research projects; Write and conceptualize grant applications for relevant funding opportunities; Analyze data across different statistical platforms (e.g., R, Mplus, SAS); Work collaboratively on federally funded research projects; Directly mentor and supervise undergraduate research assistants on research projects, including assisting with student-led research projects; and Assist with administrative tasks, such as creating and maintaining REDCap surveys and databases.",
   "Aug. 2022--Present",
   "Supervisor: Jason Van Allen, Ph.D.",
   
@@ -318,7 +318,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Organization, ~Desc,
-"2024", "Instructor: Andrew K. Littlefield, Ph.D.", "Categorical Data Analysis (In Progress)",
+"2024", "Instructor: Andrew K. Littlefield, Ph.D.", "Categorical Data Analysis",
 "2023", "Instructor: Andrew K. Littlefield, Ph.D.", "Structural Equation Modeling for Psychologists",
 "2023", "Instructor: Nicholas Croft Borgogna, Ph.D.", "Advanced Correlational Methods and Factor Analysis",
 "2022", "Instructor: Martina I. Klein, Ph.D.", "Experimental Design",
@@ -449,10 +449,15 @@ tribble(
   ~ Instructor,
   ~ Semester,
   ~ Department,
-  "Guest Lecturer, PSY 1300: General Psychology ",
+  "Guest Lecturer, HLTH 2307: Understanding Death and Dying",
+  "Course Instructor: Elizabeth Hoelscher, M.A.",
+  "Spring 2025",
+  "Texas Tech University, Department of Kinesiology & Sport Management",
+  
+  "Guest Lecturer, PSY 1300: General Psychology",
   "Course Instructor: Carol Fadalla",
-  "Fall 2024 ",
-  "Texas Tech University, Department of Psychological Sciences ",
+  "Fall 2024",
+  "Texas Tech University, Department of Psychological Sciences",
   
   "Guest Lecturer, PSY 1300: General Psychology",
   "Course Instructor: Brelynne Baldwin, M.A.",
@@ -505,7 +510,7 @@ tribble(
     "Undergraduate Research Assistant",
     "2023--2023",
   "Abigail Woodall",
-    "Subsequent Position: Student, Master of Science in Marriage & Family THerapy, Texas Woman's University",
+    "Subsequent Position: Student, Master of Science in Marriage & Family Therapy, Texas Woman's University",
     "2023--2024",
   "Sara Phy",
     "Subsequent Position: Student, Master of Public Health, Nutritional Sciences, Dietetics Concentration, University of Michigan",
