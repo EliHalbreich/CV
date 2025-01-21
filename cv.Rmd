@@ -133,7 +133,7 @@ tribble(
   "TTU Institute for Studies in Pragmaticism, Charles S. Peirce Interdisciplinary Graduate Fellowship",
   "Amount: \\$5,000",
   "Title: Examining the Role of Animal-Assisted Therapy (AAT) with Pediatric Physical Therapy (PT) Patients (Role: Co-PI)",
-  "Status: Under review",
+  "Status: Declined by funder",
   
       "2024",
   "TTU Institute for Studies in Pragmaticism, Cross-Disciplinary Research Excellence Award",
@@ -238,7 +238,7 @@ Hefner, T. D., **Halbreich, E. D.**, Jones, J., \*Arendt, F., \*Jones, C., & \*V
 
 Lancaster, B. D., Hefner, T. D., **Halbreich, E. D.**, Hall, N. J., & Van Allen, J. (In Prep). The effect of pet dogs on empirical measures of child activity.
 
-**Halbreich, E. D.**, Hefner, T. D., & Van Allen, J. (In Prep). Construction and validation of the companion animal ties scale (CATS).
+**Halbreich, E. D.**, Hefner, T. D., Healy, A. S., & Van Allen, J. (In Prep). Construction and validation of the companion animal ties scale (CATS).
 
 **Halbreich, E. D.**, & Van Allen, J. (In Prep). Examining the relationship between pet ownership and prosocial behaviors.
 
@@ -494,15 +494,21 @@ tribble(
   ~ Advisee,
   ~ Instructor,
   ~ Semester,
+  "Hyla Riley",
+    "Current mentee",
+    "2025--Present",
+  "Daniel Garcia",
+    "Current mentee",
+    "2025--Present",
   "Fanny Arendt",
     "Current mentee",
     "2024--Present",
-  "Cyerra Jones",
-    "Current mentee",
-    "2023--Present",
   "Madeleine Valley",
     "Current mentee",
     "2023--Present",
+  "Cyerra Jones",
+    "Undergraduate Research Assistant",
+    "2023--2024",
   "Amanda Tabansi",
     "Undergraduate Research Assistant",
     "2023--2024",
