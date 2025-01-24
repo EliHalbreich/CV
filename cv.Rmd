@@ -1,14 +1,18 @@
 ---
 name: Eli D.
 surname: Halbreich, M.A.
-position: "Ph.D. Student, Texas Tech University\\tabularnewline Pronouns: he/him/his"
+position: "Ph.D. Student, Texas Tech University"
 address: "Department of Psychological Sciences\\tabularnewline Box 42051, Lubbock, TX 79409-2051"
-# phone: +1 (818) 297-9925
+phone: +1 (806) 834-3938
 www: elihalbreich.rbind.io
 email: "EliHalbreich@proton.me"
-twitter: EliHalbreich
+pronouns: he/him
+researchgate: Eli_Halbreich
+bluesky: "elihalbreich.bsky.social"
 orcid: "0000-0003-4942-9804"
-github: EliHalbreich
+#github: EliHalbreich
+scholar: ffVvNRYAAAAJ
+linkedin: elihalbreich
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 header-includes:
