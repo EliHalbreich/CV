@@ -562,6 +562,20 @@ tribble(
   )
 ```
 
+## Conference Reviewer
+
+```{r}
+tribble(
+  ~Year, ~Organization, ~Desc,
+"2025", "APA 2025 Division 54", "Poster and Session Reviewer",
+) %>% 
+  detailed_entries(
+    what = Desc,
+    when = Year, 
+    where = Organization
+  )
+```
+
 # Professional Service and Development
 
 ## Service
