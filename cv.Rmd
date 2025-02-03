@@ -108,6 +108,7 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Award, ~Desc, ~Amount,
+  "2025", "2025 SPPAC Travel Award", "Society of Pediatric Psychology, Division 54 of the American Psychological Association","Amount: \\$500",
   "2021", "Priscilla N. Dunne Prize", "Tufts University Department of Psychology","Amount: \\$1,000",
   "2021", "TIHAI Student Scholar", "Tufts Initiative for Human-Animal Interaction", "Amount: \\$500",
   "2019--2022", "Dean’s List (all full-time semesters)", "Tufts University","",
