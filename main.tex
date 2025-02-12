@@ -1,0 +1,863 @@
+%
+%Academic CV LaTeX Template
+% Author: Eli D. Halbreich, M.A.
+% LinkedIn: https://www.linkedin.com/in/elihalbreich
+% License: MIT
+
+
+
+\documentclass[letter,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Eli D. Halbreich, M.A.}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    +1 (806) 834-3938 | \href{mailto:EliHalbreich@proton.me}{EliHalbreich@proton.me} | 
+    \href{http://elihalbreich.rbind.io}{http://elihalbreich.rbind.io}
+    }
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/elihalbreich}{elihalbreich} | 
+    \socialicon{\faGoogle} \href{https://scholar.google.com/citations?user=ffVvNRYAAAAJ}{ffVvNRYAAAAJ} | 
+    \ieeeicon{\includegraphics[height=1.3em]{icons8-bluesky-logo-384.png}} \href{https://bsky.app/profile/elihalbreich.bsky.social}{elihalbreich.bsky.social} |
+    \socialicon{\faOrcid} \href{https://orcid.org/0000-0003-4942-9804}{0000-0003-4942-9804}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Department of Psychological Sciences, Box 42051, Lubbock, TX 79409-2051}
+\end{center}
+
+\vspace{-4mm}
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {{Texas Tech University (APA Accredited)}}{Lubbock, TX}
+      {Doctor of Philosophy, Clinical Psychology (Expected August 2028)}{2022–Present}
+      \resumeItemListStart
+        \item Advisor: Jason Van Allen, Ph.D.
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{Texas Tech University (APA Accredited)}}{Lubbock, TX}
+      {Master of Arts, Clinical Psychology}{2022–2024}
+      \resumeItemListStart
+        \item Advisor: Jason Van Allen, Ph.D.
+        \item Master’s Thesis (2024): Pet Ownership and Family Involvement in Sports and Other Activities. Texas Tech University. Electronic Theses and Dissertations. \href{https://hdl.handle.net/2346/99242}{https://hdl.handle.net/2346/99242}
+        \resumeItemListEnd
+  \resumeSubheading
+      {{Tufts University}}{Medford, MA}
+      {Bachelor of Arts, Psychology, summa cum laude, Highest Thesis Honors}{2019–2022}
+      \resumeItemListStart
+        \item Advisor: Alexander Queen, Ph.D.
+        \item Honors Thesis (2021): Perceived Attitudes of Pet Owners About Their Pets During the COVID-19 Pandemic. Tufts University. Digital Collections and Archives. \href{https://dl.tufts.edu/concern/pdfs/6q183150s}{https://dl.tufts.edu/concern/pdfs/6q183150s}
+    \resumeItemListEnd
+  \resumeSubheading
+      {{Los Angeles City College}}{Los Angeles, CA}
+      {Psychology Major}{2017–2019}
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Grants and Fellowships}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {2023 APAGS/Psi Chi Junior Scientist Fellowship}
+  {American Psychological Association of Graduate Students \& Psi Chi}
+  {2023}
+  {Amount: \$1,000}
+
+\resumeProject
+  {Helen DeVitt Jones Fellowship}
+  {Texas Tech University Department of Psychological Sciences}
+  {2022--2026}
+  {Amount: \$16,000}
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Honors and Awards}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {2025 SPPAC Travel Award}
+  {Society of Pediatric Psychology, Division 54 of the American Psychological Association}
+  {2025}
+  {Amount: \$500}
+
+\resumeProject
+  {Priscilla N. Dunne Prize}
+  {Tufts University Department of Psychology}
+  {2021}
+  {Amount: \$1,000}
+
+\resumeProject
+  {TIHAI Student Scholar}
+  {Tufts Initiative for Human-Animal Interaction}
+  {2021}
+  {Amount: \$500}
+
+\resumeProject
+  {Dean’s List (all full-time semesters)}
+  {Tufts University}
+  {2019--2022}
+
+\resumeProject
+  {President’s Honors}
+  {Los Angeles City College}
+  {2019}
+
+\resumeProject
+  {Full Time Dean's Honor List (all full-time semesters)}
+  {Los Angeles City College}
+  {2018--2019}
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Grant and Fellowship Applications}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {{TTU Institute for Studies in Pragmaticism}}{Amount: \$5,000}
+      {Charles S. Peirce Interdisciplinary Graduate Fellowship}{2024}
+      \resumeItemListStart
+        \item Title: Examining the Role of Animal-Assisted Therapy (AAT) with Pediatric Physical Therapy (PT) Patients
+        \item Role: Co-PI
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{TTU Institute for Studies in Pragmaticism}}{Amount: \$6,000}
+      {Cross-Disciplinary Research Excellence Award}{2024}
+      \resumeItemListStart
+        \item Title: Examining the impact of animal-assisted therapy on pediatric patients’ psychological and physical health
+        \item Role: Co-I
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{American Foundation for Suicide Prevention}}{Amount: \$49,870}
+      {Pilot Innovation Grant}{2023}
+      \resumeItemListStart
+        \item Title: Real-time assessment of suicidal thoughts and behaviors among sexual and gender minority young adults with companion animals
+        \item Role: Co-PI
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{National Science Foundation}}{Amount: \$111,000}
+      {Graduate Research Fellowship Program}{2023}
+      \resumeItemListStart
+        \item Title: Companion animals, social support, and coping in rural and urban LGBTQ+ and non-LGBTQ+ adolescents and young adults
+        \item Role: PI
+        \item Status: Not recommended
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{Society of Pediatric Psychology}}{Amount: \$5,000}
+      {Marion and Donald Routh Student Research Grant}{2023}
+      \resumeItemListStart
+        \item Title: Examining the impact of animal-assisted therapy on pediatric patients’ psychological and physical health
+        \item Role: Co-I
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{American Psychological Foundation}}{Amount: \$20,000}
+      {Visionary Grant}{2023}
+      \resumeItemListStart
+        \item Title: Real-time assessment of suicidal thoughts and behaviors among sexual and gender minority young adults with companion animals
+        \item Role: Co-PI
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{Human Animal Bond Research Institute}}{Amount: \$49,500}
+      {Charles S. Peirce Interdisciplinary Graduate Fellowship}{2023}
+      \resumeItemListStart
+        \item Title: Companion animals, social support, and coping in rural and urban LGBTQ+ and non-LGBTQ+ adolescents and young adults
+        \item Role: Co-I
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubheading
+      {{University of North Texas Center for Psychosocial Health Disparities Research}}{Amount: \$10,000}
+      {Improving Behavioral Health of Underserved Groups}{2022}
+      \resumeItemListStart
+        \item Title: Companion animals, social support, and coping in rural LGBT+ youth
+        \item Role: PI
+        \item Status: Declined by funder
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Publications} \hfill {\scriptsize *Indicates undergraduate trainee author/presenter}}
+
+\vspace{-0.4mm}
+\href{https://scholar.google.com/citations?user=ffVvNRYAAAAJ}{\scriptsize Google Scholar Profile}
+\vspace{1mm}
+
+\textbf{Peer-Reviewed Publications}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, \& Van Allen, J. (2024). Pet Ownership and Family Involvement in Sports and Other Activities. \textit{Anthrozoös}, \textit{37}(6), 1107--1131. \href{https://doi.org/10.1080/08927936.2024.2406097}{https://doi.org/10.1080/08927936.2024.2406097}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, Hefner, T. D., Healy, A. S., \& Van Allen, J. (2024). Measurement of attachment in human-animal interaction research. \textit{Human-Animal Interactions}, \textit{12}(1). \href{https://doi.org/10.1079/hai.2024.0030}{https://doi.org/10.1079/hai.2024.0030}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+King, E. K., \textbf{Halbreich, E. D.}, Callina, K., \& Mueller, M. K. (2023). Companion animals and the relationship between peer victimization and emotion regulation in youth. \textit{Journal of Research on Adolescence}, \textit{34}(1), 85--95. \href{https://doi.org/10.1111/jora.12901}{https://doi.org/10.1111/jora.12901}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+Mueller, M. K., King, E. K., \textbf{Halbreich, E. D.}, \& Anderson, E. (2023) Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. \textit{Human-Animal Interactions}, \textit{11}(1). \href{https://doi.org/10.1079/hai.2023.0036}{https://doi.org/10.1079/hai.2023.0036}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, Callina, K., King, E. K., \& Mueller, M. K. (2023). Companion animals and profiles of peer social behavior in adolescence. \textit{Journal of Adolescence}, \textit{95}(6), 1152--1167. \href{https://doi.org/10.1002/jad.12183}{https://doi.org/10.1002/jad.12183}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.} (2022). Perceived attitudes of pet owners about their pets during the COVID-19 pandemic. \textit{Animalia: An Anthrozoology Journal}, \textit{6}(1), 1--13. \href{https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic}{https://www.animaliajournal.org/post/perceived-attitudes-of-pet-owners-about-their-pets-during-the-covid-19-pandemic}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+Mueller, M. K., King, E. K., \textbf{Halbreich, E. D.}, \& Callina, K. S. (2022). Companion animals and adolescent stress and adaptive coping during the COVID-19 pandemic. \textit{Anthrozoös}, \textit35*(5), 693--712. \href{https://doi.org/10.1080/08927936.2022.2027093}{https://doi.org/10.1080/08927936.2022.2027093}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, \& Mueller, M. K. (2022). Profiles of family pet ownership during the COVID-19 pandemic. \textit{Current Psychology}. \href{https://doi.org/10.1007/s12144-021-02574-x}{https://doi.org/10.1007/s12144-021-02574-x}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+Linder, D. E., Folta, S. C., Must, A., Mulé, C. M., Cash, S. B., \textbf{Halbreich, E. D.}, Colón, C., Sullivan, S., Sanabria, E., Gibbs, D., \& Farrell, T. (2021). A stakeholder-engaged approach to development of an animal-assisted intervention for obesity prevention among youth with autism spectrum disorder and their pet dogs. \textit{Frontiers in Veterinary Science}, \textit{8}, 735432. \href{https://doi.org/10.3389/fvets.2021.735432}{https://doi.org/10.3389/fvets.2021.735432}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+Linder D. E., Santiago S., \& \textbf{Halbreich, E. D.} (2021). Is there a correlation between dog obesity and human obesity? Preliminary findings of overweight status among dog owners and their dogs. \textit{Frontiers in Veterinary Science}, \textit{8}, 654617. \href{https://doi.org/10.3389/fvets.2021.654617}{https://doi.org/10.3389/fvets.2021.654617}
+
+\vspace{3mm}
+
+\textbf{Book Chapters}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+King, E. K., \textbf{Halbreich, E. D.}, \& Mueller, M. K. (2023). Animals in development: Childhood and adolescence. In A. H. Fine, M. K. Mueller, Z. Y. Ng, A. M. Beck, \& J. M. Peralta  (Eds.), \textit{The Routledge International Handbook of Human-Animal Interactions and Anthrozoology} (1st ed., pp. 214--227). Routledge. \href{https://doi.org/10.4324/9781032153346}{https://doi.org/10.4324/9781032153346}
+\vspace{3mm}
+
+\textbf{Online Publications}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+Linder, D. E., \& \textbf{Halbreich, E. D.} (2022, February 22). \textit{Does My Pet Need a ‘Bland Diet’?} Petfoodology. \href{https://vetnutrition.tufts.edu/2022/02/does-my-pet-need-a-bland-diet/}{https://vetnutrition.tufts.edu/2022/02/does-my-pet-need-a-bland-diet/}
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.} (2019, December 9). \textit{Tenure Most Foul}. Tufts University Student Scholarship. Tisch Library. \href{http://hdl.handle.net/10427/6W924Q81F}{http://hdl.handle.net/10427/6W924Q81F}
+\vspace{3mm}
+
+\textbf{Selected Manuscripts in Preparation}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+Hefner, T. D., \textbf{Halbreich, E. D.}, Jones, J., *Arendt, F., *Jones, C., \& *Valley, M. (In Prep). Systematic review and meta-analysis of cognitive-dissonance interventions to improve body image satisfaction among athletes.
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+Lancaster, B. D., Hefner, T. D., \textbf{Halbreich, E. D.}, Hall, N. J., \& Van Allen, J. (In Prep). The effect of pet dogs on empirical measures of child activity.
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, Hefner, T. D., Healy, A. S., \& Van Allen, J. (In Prep). Construction and validation of the companion animal ties scale (CATS).
+\vspace{1mm}
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, \& Van Allen, J. (In Prep). Examining the relationship between pet ownership and prosocial behaviors.
+
+\section{\textbf{Presentations}}
+
+\vspace{-0.4mm}
+\vspace{1mm}
+
+\textbf{Symposium Contributions}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+Mueller, M. K., \textbf{Halbreich, E. D.}, \& Anderson, E. (2022, July 7--9). Feasibility of using ecological momentary assessment to measure the effects of interactions with pet dogs on psychophysiological reactivity in adolescents with social anxiety. In N. Gee (Chair), \textit{Ecological Momentary Assessment (EMA) as a Tool for Assessing Human-animal Interaction Across Contexts}. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+\vspace{3mm}
+
+\textbf{Snapshot Presentations}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+Hoelscher, E.C., \textbf{Halbreich, E.D.}, \& Victor, S. E. (2025, June 26--27). \textit{Feeling the Urge: Interoception and NSSI Urge Frequency in Transgender and Nonbinary Adults}. International Society for the Study of Self-injury 2025 Annual Conference, Wellington, New Zealand.
+\vspace{3mm}
+
+\textbf{Poster Presentations}
+\vspace{0.2mm}
+
+\hangindent=2em
+\hangafter=1
+Hefner, T. D., \textbf{Halbreich, E. D.}, Jones, C., *Valley, M., \& Van Allen, J. (2025, April 3--5). \textit{Relationship between pet ownership, physical activity, and sleep recommendations}. Society of Pediatric Psychology 2025 Annual Conference, Phoenix, AZ, United States.
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, \*Arendt, F., Hefner, T. D., \& Van Allen, J. (2025, April 3--5). \textit{Evaluating prosocial behavior and sleep disturbances between pet owners and non-pet owners}. Society of Pediatric Psychology 2025 Annual Conference, Phoenix, AZ, United States.
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, Hefner, T. D., \& Van Allen, J. (2024, April 18--20). \textit{Pet ownership and physical activity in adolescence}. The Society for Research on Adolescence 2024 Annual Meeting, Chicago, IL, United States.
+
+\hangindent=2em
+\hangafter=1
+King, E. K., \textbf{Halbreich, E. D.}, Anderson, E., \& Mueller, M. K. (2023, June 15--18). \textit{Dog interactions and psychophysiology in adolescents with social anxiety}. 32nd International Society for Anthrozoology Conference, Edinburgh, Scotland.
+
+\hangindent=2em
+\hangafter=1
+\*Streicher, B. E., \textbf{Halbreich, E. D.}, Healy, A., Hefner, T. D., Lelakowska, G., \& Van Allen, J. (2023, May 3). \textit{Dog ownership, physical activity, depression, and anxiety symptoms in youth}. Obesity Research Institute 8th Annual Meeting, Lubbock, TX, United States.
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.}, Mueller, M. K., King, E. K., \& Callina, K. (2023, April 13--15). \textit{Pet ownership and profiles of peer social behavior in adolescence}. The Society for Research on Adolescence 2023 Annual Meeting, San Diego, CA, United States.
+
+\hangindent=2em
+\hangafter=1
+\textbf{Halbreich, E. D.} (2022, July 7--9). \textit{Perceived attitudes of pet owners about their pets during the COVID-19 pandemic}. 31st International Society for Anthrozoology Conference, Boise, ID, United States.
+
+\hangindent=2em
+\hangafter=1
+Folta, S. C., Mulé, C. M., Linder, D. E., Must, A., Cash, S. B., Adkins, J., \& \textbf{Halbreich, E. D.} (2022, May 11--14). \textit{Exploring nutrition, physical activity, and the role of pet dogs in households with a child with autism spectrum disorder: The DANE Study}. INSAR 2022 Annual Meeting, Austin, TX, United States.
+
+\section{\textbf{Research and Clinical Experience}}
+\vspace{-0.4mm}
+\vspace{1mm}
+
+\textbf{Research Experience}
+
+\vspace{-3mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Examining Nutrition, Exercise, and Rest in Growing Youth (ENERGY) Lab}{}
+      {Research Assistant}{Aug. 2022--Present}
+      \resumeItemListStart
+        \item Supervisor: Jason Van Allen, Ph.D.
+        \item Write, edit, and conduct statistical analyses for peer-reviewed manuscripts, utilizing structural equation modeling and approaches to categorical data analysis; Propose and manage new research projects; Write and conceptualize grant applications for relevant funding opportunities; Analyze data across different statistical platforms (e.g., R, Mplus, SAS); Work collaboratively on federally funded research projects; Directly mentor and supervise undergraduate research assistants on research projects, including assisting with student-led research projects; and Assist with administrative tasks, such as creating and maintaining REDCap surveys and databases.
+      \resumeItemListEnd
+    \resumeSubheading
+      {Children's Television Project}{}
+      {Research Coordinator}{Aug. 2021--May 2022}
+      \resumeItemListStart
+        \item Supervisor: Calvin Gidney, Ph.D.
+        \item Supervise coders and research assistants working on a longitudinal research project; Work with PIs to implement and improve upon long-term project goals; Organize and manage data from the current season as well as from past years; Assign and track generation of character sheets, coding, cleaning, and collapsing; Generate and manage coder information surveys, training surveys, and coding instrument responses; Respond to student inquiries in a timely manner; and Assist in organizing structure of weekly class meetings as well as semester-long schedule.
+      \resumeItemListEnd 
+    \resumeSubheading
+      {Tufts Pets and Well-Being Lab}{}
+      {Research Assistant}{May 2021--Aug. 2022}
+      \resumeItemListStart
+        \item Supervisor: Megan K. Mueller, Ph.D.
+        \item Work closely with research team on funded research projects; Assist with participant recruitment, consent, protocol training, data collection, debriefing, and tracking; Draft manuscripts and grant proposals; Conduct systematic literature reviews and analyses; Handle data entry and analysis; and Assist with administrative tasks.
+      \resumeItemListEnd 
+    \resumeSubheading
+      {Tufts Initiative for Human-Animal Interaction}{}
+      {Research Assistant}{Aug. 2019--Aug. 2022}
+      \resumeItemListStart
+        \item Supervisor: Deborah Linder, DVM, MS, DACVN
+        \item Draft manuscripts; Conduct qualitative interviews with participants; Provide general administrative assistance on a number of funded research projects; Work with the Tufts IRB to help ensure that all aspects of the research studies are in compliance with the applicable regulations and institutional guidelines prior to IRB approval; Facilitate feedback on key documents and managing a collaborative workspace with stakeholders; Oversee projects through varying phases of development; Prepare, draft, and finalize stakeholder and research group meeting agendas and minutes; and Draft and finalize site and study documents.
+      \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    
+\textbf{Statistical Training}
+
+\vspace{-3mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Categorical Data Analysis}
+  {Instructor: Andrew K. Littlefield, Ph.D.}
+  {2024}
+  {}
+
+\resumeProject
+  {Structural Equation Modeling for Psychologists}
+  {Instructor: Andrew K. Littlefield, Ph.D.}
+  {2023}
+  {}
+
+\resumeProject
+  {Advanced Correlational Methods and Factor Analysis}
+  {Instructor: Nicholas Croft Borgogna, Ph.D.}
+  {2023}
+  {}
+
+\resumeProject
+  {Experimental Design}
+  {Instructor: Martina I. Klein, Ph.D.}
+  {2022}
+  {}
+
+\resumeSubHeadingListEnd
+  
+\textbf{Clinical Experience}
+
+\vspace{-3mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Texas Tech University, Texas Tech University Psychology Clinic}{}
+      {Graduate Student | Individual Adult and Child Therapist}{Sep. 2023--Present}
+      \resumeItemListStart
+        \item Supervisors: Andrew K. Littlefield, Ph.D., Sarah E. Victor, Ph.D., John L. Cooley, Ph.D., Jason Van Allen, Ph.D., Adam T. Schmidt, Ph.D., Jonathan Singer, Ph.D.
+        \item Provide long-term, individual psychotherapy for anxiety disorders (e.g., generalized anxiety disorder, social anxiety disorder), mood disorders (e.g., major depressive disorder, persistent depressive disorder), chronic pain, attention-deficit/hyperactivity disorder, oppositional defiant disorder, and prolonged grief disorder.
+        \item Receive didactic training in evidence-based treatment protocols, including Parent Management Training, Defiant Children, Trauma-Focused Cognitive Behavioral Therapy, and Motivational Interviewing.
+        \item Implement evidence-based treatments and theoretically informed case conceptualization built on Cognitive Behavioral Therapy, Acceptance and Commitment Therapy, Behavioral Activation, and Motivational Interviewing.
+        \item Utilize treatment protocols, including the \textit{Unified Protocol for Transdiagnostic Treatment of Emotional Disorders}, \textit{ACT Made Simple}, \textit{Managing Chronic Pain: A Cognitive-Behavioral Therapy Approach}, and \textit{Cognitive Behavioral Therapy for Insomnia in Veterans}.
+        \item Provide long-term individual and parent-based therapy for children utilizing treatment protocols, including \textit{Defiant Children}, \textit{A Clinical Guide to Pediatric Sleep}, and \textit{Multidimensional Grief Therapy}.
+        \item Design visual aids, client worksheets, and homework documents for clients, consistent with evidence-based treatment protocols.
+        \item Assess for suicide and self-harm risk, create safety plans, monitor risk throughout treatment, assess for and report abuse and neglect to the appropriate safety organizations, and communicate safety-related concerns to parents and caregivers of children.
+        \item Advocate for clients in additional contexts, including medical settings and places of education.
+        \item Conduct psychodiagnostic evaluations (including structured and semi-structured interviews) and assessment batteries, and provide feedback to clients.
+        \item Write psychodiagnostic reports and treatment progress reports, including intake reports, treatment plans, and termination summaries.
+    \resumeItemListEnd
+    \resumeSubheading
+      {University Medical Center (UMC) Health System, Pediatrics}{}
+      {Practicum Student | Individual Therapist}{Sep. 2024--Present}
+      \resumeItemListStart
+        \item Supervisor: Jason Van Allen, Ph.D.
+        \item Provide a variety of psychological services offered within the Pediatric Intensive Care Unit, the general Pediatrics Department, the Neonatal Intensive Care Unit, and others.
+    \resumeItemListEnd
+    \resumeSubheading
+      {Equine-Assisted Positively Fit}{}
+      {Practicum Student | Individual \& Family Therapist}{Mar. 2024--Present}
+      \resumeItemListStart
+        \item Supervisor: Jason Van Allen, Ph.D.
+        \item Lead therapist providing a family-focused, weight management intervention to youth and their families.
+    \resumeItemListEnd
+    \resumeSubheading
+      {Texas Tech University, Grief Therapy with Adolescents}{}
+      {Practicum Student}{Sep. 2023–Aug. 2024}
+      \resumeItemListStart
+        \item Supervisor: Jonathan Singer, Ph.D.
+        \item Receive didactic training in \textit{Trauma and Grief Component Therapy} for adolescents who have lost a family member.
+    \resumeItemListEnd
+    \resumeSubheading
+      {Texas Tech University, CBT Pain Program for Adolescents}{}
+      {Practicum Student}{Sep. 2023–Aug. 2024}
+      \resumeItemListStart
+        \item Supervisor: Caroline Cummings, Ph.D.
+        \item Receive didactic training in CBT-based pain protocols—\textit{Children’s Health and Illness Recovery Program} and \textit{The Comfort Ability}—for adolescents with chronic pain and their parents
+    \resumeItemListEnd
+    \resumeSubheading
+      {Texas Tech University, Texas Tech University Psychology Clinic}{}
+      {Clinic Co-Director}{Jan. 2023–May 2023}
+      \resumeItemListStart
+        \item Supervisor: Megan A. Thoen, Ph.D.
+        \item Conduct first-contact intake screenings of incoming clients, including assessment and documentation of risk, history, and presenting concerns.
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+\vspace{-6mm}
+
+\section{\textbf{Teaching and Mentoring Experience}}
+\vspace{-0.4mm}
+\vspace{1mm}
+
+\textbf{Teaching}
+\vspace{-3mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Guest Lecturer, HLTH 2307: Understanding Death and Dying}{}
+      {Texas Tech University, Department of Kinesiology \& Sport Management}{Spring 2025}
+      \resumeItemListStart
+        \item Course Instructor: Elizabeth Hoelscher, M.A.
+    \resumeItemListEnd
+    \resumeSubheading
+      {Guest Lecturer, PSY 1300: General Psychology}{}
+      {Texas Tech University, Department of Psychological Sciences}{Fall 2024}
+      \resumeItemListStart
+        \item Course Instructor: Carol Fadalla
+    \resumeItemListEnd
+    \resumeSubheading
+      {Guest Lecturer, PSY 1300: General Psychology}{}
+      {Texas Tech University, Department of Psychological Sciences}{Fall 2024}
+      \resumeItemListStart
+        \item Course Instructor: Brelynne Baldwin, M.A.
+    \resumeItemListEnd
+    \resumeSubheading
+      {Teaching Assistant, PSY 2400: Statistical Methods Lab}{}
+      {Texas Tech University, Department of Psychological Sciences}{Fall 2022}
+      \resumeItemListStart
+        \item Course Instructor: Will Crescioni, Ph.D. | Average Student Rating: 4.5/5.0
+    \resumeItemListEnd
+    \resumeSubheading
+      {Teaching Assistant, CSHD 0159: Understanding Child Development Through Film}{}
+      {Tufts University, Eliot-Pearson Department of Child Study and Human Development}{Fall 2020}
+      \resumeItemListStart
+        \item Course Instructor: Calvin Gidney, Ph.D
+    \resumeItemListEnd
+    \resumeSubheading
+      {Teaching Assistant, CH 0099: Special Topics In Community Health, One Health}{}
+      {Tufts University, Department of Community Health}{Fall 2020}
+      \resumeItemListStart
+        \item Course Instructor: Deborah Linder, DVM, MS, DACVN
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-3mm}
+\textbf{Mentoring}
+\vspace{-3mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hyla Riley}{}
+      {Current mentee}{2025–Present}
+    \resumeSubheading
+      {Fanny Arendt}{}
+      {Current mentee}{2024–Present}
+    \resumeSubheading
+      {Madeleine Valley}{}
+      {Current mentee}{2023–Present}
+    \resumeSubheading
+      {Cyerra Jones}{}
+      {Undergraduate Research Assistant}{2023–2024}
+    \resumeSubheading
+      {Amanda Tabansi}{}
+      {Undergraduate Research Assistant}{2023–2024}
+    \resumeSubheading
+      {Macie Le}{}
+      {Undergraduate Research Assistant}{2023}
+    \resumeSubheading
+      {Abigail Woodall}{}
+      {Subsequent Position: Student, Master of Science in Marriage \& Family Therapy, Texas Woman’s University}{2023–2024}
+    \resumeSubheading
+      {Sara Phy}{}
+      {Subsequent Position: Student, Master of Public Health, Nutritional Sciences, Dietetics Concentration, University of Michigan}{2023}
+    \resumeSubheading
+      {Brooke Streicher}{}
+      {Subsequent Position: Research Coordinator, Texas Tech University}{2022–2023}
+    \resumeSubheading
+      {Ellis Renwick-Archibold}{}
+      {Science Research Program, New Rochelle High School}{2022}
+    \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Editorial and Reviewing Experience}}
+
+\vspace{-0.4mm}
+\href{https://www.webofscience.com/wos/author/record/ABE-9213-2021}{\scriptsize Web of Science Profile}
+\vspace{1mm}
+
+\textbf{Ad hoc Reviewer}
+\vspace{0.2mm}
+
+Translational Issues in Psychological Science
+
+\vspace{3mm}
+
+\textbf{Fellowship Reviewer}
+\vspace{-4mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graduate Student Reviewer}{}
+      {APAGS/Psi Chi Junior Scientist Fellowship}{2024}
+    \resumeSubHeadingListEnd
+
+
+\textbf{Conference Reviewer}
+\vspace{-4mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Poster and Session Reviewer}{}
+      {APA 2025 Division 54}{2025}
+    \resumeSubHeadingListEnd
+
+\section{\textbf{Professional Service and Development}}
+
+\vspace{1mm}
+
+\textbf{Service}
+\vspace{-4mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Society of Clinical Child and Adolescent Psychology (SCCAP) Mentor}{}
+      {SCCAP, Division 53}{2024}
+    \resumeSubheading
+        {Inclusion, Diversity, Equity, and Access (IDEA) Committee Member}{}
+        {American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice}{2022--2023}
+    \resumeSubheading
+        {Student Representative}{}
+        {American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice}{2022--2023}
+    \resumeSubheading
+        {APA Campus Ambassador}{}
+        {American Psychological Association}{2021--2023}
+    \resumeSubHeadingListEnd
+
+
+\textbf{Development}
+\vspace{-3mm}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dialectical Behavior Therapy (DBT) Seminar}{}
+      {Megan Renna, Ph.D.}{Jul. 2024}
+    \resumeSubheading
+      {Virtual BPD COMPASS Introductory Workshop}{}
+      {Compass Mental Health Training \& Consultation}{Jun. 2024}
+    \resumeSubheading
+      {Telehealth 101}{}
+      {Texas A\&M Health Telehealth Institute}{May 2024}
+    \resumeSubheading
+      {Multidimensional Grief Therapy (MGT) Overview Training}{}
+      {The Trauma and Grief Center at the Hackett Center for Mental Health}{Nov. 2023}
+    \resumeSubheading
+      {The Groundwork Program}{}
+      {Texas Tech University}{May 2023}
+    \resumeSubheading
+      {Making Equitable Attendance Policies Workshop}{}
+      {Texas Tech University}{Jan. 2024}
+    \resumeSubHeadingListEnd
+    \vspace{-6mm}
+
+\section{\textbf{Skills}}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages: }
+    {R, Markdown, LaTeX}
+  \resumeSubItem{Statistical Software: }
+    {Posit products (i.e., RStudio IDE, Quarto, tidyverse, ggplot2), MPlus, SAS, SPSS, MATLAB}
+  \resumeSubItem{Database \& Survey Systems: }
+    {REDCap, Qualtrics}
+  \resumeSubItem{Research Skills: }{Categorical data analysis, structural equation modeling, general linear model applications}
+ \resumeHeadingSkillEnd
+ \vspace{-6mm}
+
+\section{\textbf{Professional Society Affiliations}}
+\vspace{.4mm}
+    \resumeItemListStart
+        \item American Psychological Association, Division 54: Society of Pediatric Psychology
+        \item APA Division 54: Sports Medicine and Orthopedics SIG
+        \item APA Division 54: Pediatric Research/Innovative Statistical Methodologies SIG
+        \item APA Division 54: Gender Health SIG
+        \item APA Division 54: Diversity SIG
+        \item Psi Chi, The International Honor Society in Psychology
+        \item American Psychological Association, Division 53: Society of Clinical Child and Adolescent Psychology
+        \item American Psychological Association, Division 17, Section 13: The Section on Human-Animal Interaction: Research and Practice
+        \item Human Animal Bond Association
+
+\resumeItemListEnd
+\vspace{-3mm}
+
+\section{\textbf{Certifications}}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{}{\textbf{MoCA Cognitive Assessment: }{Certified Rater}}{Sep. 2023}
+\resumePOR{}{\textbf{QPR Institute: }{QPR Gatekeeper}}{Apr. 2023}
+\resumePOR{}{
+\textbf{CITI Program: } {{\href{https://www.citiprogram.org/verify/?w1aa7107a-800d-469f-b22b-0c306f80e578-53188098}{Working with Dogs in Research Settings}}}}{Jan. 2023}
+\resumePOR{}{
+\textbf{CITI Program: } {{\href{https://www.citiprogram.org/verify/?w1c60d9ff-dc47-40b1-ae69-95e128571009-53188100}{Working With Horses In An Agricultural Research Setting}}}}{Dec. 2022}
+\resumePOR{}{
+\textbf{CITI Program: } {{\href{https://www.citiprogram.org/verify/?wca1e7838-4321-42bc-8267-d221d3b6a83d-51316849}{TTU Human Subject Research Course}}}}{Sep. 2022}
+\resumePOR{}{
+\textbf{CITI Program: } {{\href{https://www.citiprogram.org/verify/?w31b34590-8d42-491c-a4fa-2a0e39f1ab63-51316848}{Social and Behavioral Responsible Scholarship Course}}}}{Sep. 2022}
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Additional Information}}
+\vspace{.4mm}
+\small{
+\textbf{Languages: } English (Native); German (Intermediate High; ACTFL); Spanish (Novice Mid; ACTFL)
+}
+
+
+\section{\textbf{References}}
+\vspace{-0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*,labelsep=2mm]
+\item \textbf{Jason Van Allen, Ph.D.}\\
+   Associate Professor; Director of Clinical Training; John G. Skelton, Jr. Regents Professorship\\
+   Department of Psychological Sciences, Clinical Psychology Program\\
+   Texas Tech University\\
+   Email: jason.vanallen@ttu.edu\\
+   Phone: +1 (806) 834-7703\\
+   \textit{Relationship: Doctoral Advisor}
+\end{enumerate}
+}
+
+\end{document}
